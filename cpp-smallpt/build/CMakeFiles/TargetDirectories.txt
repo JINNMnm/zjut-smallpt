@@ -1,0 +1,3 @@
+/root/data1/codes/smallpt/cpp-smallpt/build/CMakeFiles/rebuild_cache.dir
+/root/data1/codes/smallpt/cpp-smallpt/build/CMakeFiles/smallpt_cpu.dir
+/root/data1/codes/smallpt/cpp-smallpt/build/CMakeFiles/edit_cache.dir

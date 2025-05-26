@@ -1,0 +1,3 @@
+/ssd10/jxc/smallpt/openmp-cpp-smallpt/build/CMakeFiles/smallpt_openmp.dir
+/ssd10/jxc/smallpt/openmp-cpp-smallpt/build/CMakeFiles/edit_cache.dir
+/ssd10/jxc/smallpt/openmp-cpp-smallpt/build/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,99 @@
+Rendering log from 4 to 100 samples (step 4)
+--------------------------------------------
+[Spp: 4]
+
+[Render completed] Samples: 4 | Time elapsed: 28188 ms
+
+[Spp: 8]
+
+[Render completed] Samples: 8 | Time elapsed: 59869 ms
+
+[Spp: 12]
+
+[Render completed] Samples: 12 | Time elapsed: 82698 ms
+
+[Spp: 16]
+
+[Render completed] Samples: 16 | Time elapsed: 116236 ms
+
+[Spp: 20]
+
+[Render completed] Samples: 20 | Time elapsed: 138442 ms
+
+[Spp: 24]
+
+[Render completed] Samples: 24 | Time elapsed: 169487 ms
+
+[Spp: 28]
+
+[Render completed] Samples: 28 | Time elapsed: 199225 ms
+
+[Spp: 32]
+
+[Render completed] Samples: 32 | Time elapsed: 219652 ms
+
+[Spp: 36]
+
+[Render completed] Samples: 36 | Time elapsed: 253502 ms
+
+[Spp: 40]
+
+[Render completed] Samples: 40 | Time elapsed: 282940 ms
+
+[Spp: 44]
+
+[Render completed] Samples: 44 | Time elapsed: 309888 ms
+
+[Spp: 48]
+
+[Render completed] Samples: 48 | Time elapsed: 325030 ms
+
+[Spp: 52]
+
+[Render completed] Samples: 52 | Time elapsed: 373476 ms
+
+[Spp: 56]
+
+[Render completed] Samples: 56 | Time elapsed: 403403 ms
+
+[Spp: 60]
+
+[Render completed] Samples: 60 | Time elapsed: 431790 ms
+
+[Spp: 64]
+
+[Render completed] Samples: 64 | Time elapsed: 461064 ms
+
+[Spp: 68]
+
+[Render completed] Samples: 68 | Time elapsed: 468844 ms
+
+[Spp: 72]
+
+[Render completed] Samples: 72 | Time elapsed: 489179 ms
+
+[Spp: 76]
+
+[Render completed] Samples: 76 | Time elapsed: 514641 ms
+
+[Spp: 80]
+
+[Render completed] Samples: 80 | Time elapsed: 363603 ms
+
+[Spp: 84]
+
+[Render completed] Samples: 84 | Time elapsed: 595101 ms
+
+[Spp: 88]
+
+[Render completed] Samples: 88 | Time elapsed: 624146 ms
+
+[Spp: 92]
+
+[Render completed] Samples: 92 | Time elapsed: 626448 ms
+
+[Spp: 96]
+
+[Render completed] Samples: 96 | Time elapsed: 666482 ms
+
+[Spp: 100]
