@@ -1,1 +1,0 @@
-/usr/bin/c++     CMakeFiles/smallpt_cpu.dir/src/cpp-smallpt.cpp.o  -o smallpt_cpu 
