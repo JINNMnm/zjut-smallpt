@@ -26,10 +26,13 @@ namespace smallpt {
 	inline void WritePPM(std::uint32_t w, 
 						 std::uint32_t h, 
 						 const Vector3* Ls, 
-						 const char* fname = "openmp-cpp-image.ppm") noexcept {
+						 std::uint32_t epoch = 0,
+						 const char* prefix = "openmp-cpp-image") noexcept {
 		
-		FILE* fp = fopen(fname, "w");
-		// FILE* fp;
+		char filename[256];
+		std::snprintf(filename, sizeof(filename), "%s-epoch%u.ppm", prefix, epoch);
+
+		FILE* fp = fopen(filename, "w");
 		
 		if (!fp) {
 			perror("fopen failed");

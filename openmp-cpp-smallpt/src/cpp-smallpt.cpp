@@ -7,6 +7,7 @@
 #include "sampling.hpp"
 #include "specular.hpp"
 #include "sphere.hpp"
+#include <chrono>
 
 #pragma endregion
 
@@ -31,21 +32,24 @@
 
 #pragma endregion
 
+using Clock = std::chrono::high_resolution_clock;
+
 //-----------------------------------------------------------------------------
 // Declarations and Definitions
 //-----------------------------------------------------------------------------
 namespace smallpt {
 
 	constexpr Sphere g_spheres[] = {
-		Sphere(1e5,  Vector3(1e5 + 1, 40.8, 81.6),   Vector3(),   Vector3(0.75,0.25,0.25), Reflection_t::Diffuse),	 //Left
-		Sphere(1e5,  Vector3(-1e5 + 99, 40.8, 81.6), Vector3(),   Vector3(0.25,0.25,0.75), Reflection_t::Diffuse),	 //Right
-		Sphere(1e5,  Vector3(50, 40.8, 1e5),         Vector3(),   Vector3(0.75),           Reflection_t::Diffuse),	 //Back
-		Sphere(1e5,  Vector3(50, 40.8, -1e5 + 170),  Vector3(),   Vector3(),               Reflection_t::Diffuse),	 //Front
-		Sphere(1e5,  Vector3(50, 1e5, 81.6),         Vector3(),   Vector3(0.75),           Reflection_t::Diffuse),	 //Bottom
-		Sphere(1e5,  Vector3(50, -1e5 + 81.6, 81.6), Vector3(),   Vector3(0.75),           Reflection_t::Diffuse),	 //Top
-		Sphere(16.5, Vector3(27, 16.5, 47),          Vector3(),   Vector3(0.999),          Reflection_t::Specular),	 //Mirror
-		Sphere(16.5, Vector3(73, 16.5, 78),          Vector3(),   Vector3(0.999),          Reflection_t::Refractive),//Glass
-		Sphere(600,	 Vector3(50, 681.6 - .27, 81.6), Vector3(12), Vector3(),               Reflection_t::Diffuse)	 //Light
+		Sphere(1e5,  Vector3(1e5 + 1, 40.8, 81.6),   Vector3(),   Vector3(0.15,0.85,0.25), Reflection_t::Diffuse),  //Left
+		Sphere(1e5,  Vector3(-1e5 + 99, 40.8, 81.6), Vector3(),   Vector3(0.13,0.73,0.81), Reflection_t::Diffuse),  //Right
+		Sphere(1e5,  Vector3(50, 40.8, 1e5),         Vector3(),   Vector3(0.75),           Reflection_t::Diffuse),  //Back
+		Sphere(1e5,  Vector3(50, 40.8, -1e5 + 170),  Vector3(),   Vector3(0.75),               Reflection_t::Diffuse),  //Front
+		Sphere(1e5,  Vector3(50, 1e5, 81.6),         Vector3(),   Vector3(0.75),           Reflection_t::Diffuse),  //Bottom
+		Sphere(1e5,  Vector3(50, -1e5 + 81.6, 81.6), Vector3(),   Vector3(0.75),           Reflection_t::Diffuse),  //Top
+		Sphere(16.5, Vector3(27, 16.5, 47),          Vector3(),   Vector3(0.999),          Reflection_t::Specular),  //Mirror
+		Sphere(16.5, Vector3(73, 16.5, 78),          Vector3(),   Vector3(0.999),          Reflection_t::Diffuse),//Glass
+		Sphere(8.5, Vector3(73, 53.5, 78),          Vector3(),   Vector3(0.999),          Reflection_t::Refractive),//Glass
+		Sphere(600,  Vector3(50, 681.6 - .27, 81.6), Vector3(12), Vector3(),               Reflection_t::Diffuse)  //Light	  
 	};
 
 	[[nodiscard]]
@@ -163,13 +167,23 @@ namespace smallpt {
 			}
 		}
 
-		WritePPM(w, h, Ls.get());
+		WritePPM(w, h, Ls.get(),nb_samples);
 	}
 }
 
 int main(int argc, char* argv[]) {
 	const std::uint32_t nb_samples = (2 == argc) ? atoi(argv[1]) / 4 : 1;
+	auto start = Clock::now();
+
 	smallpt::Render(nb_samples);
+
+	auto end = Clock::now();
+	auto duration_ms = std::chrono::duration_cast<std::chrono::milliseconds>(end - start).count();
+
+
+	std::cout << "\n[Render completed] Samples: " << nb_samples * 4
+              << " | Time elapsed: " << duration_ms << " ms" << std::endl;
+
 
 	return 0;
 }
