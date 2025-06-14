@@ -10,6 +10,8 @@
 
 #include "cuda_tools.hpp"
 #include <mpi.h>
+#include <chrono>
+using Clock = std::chrono::high_resolution_clock;
 
 #pragma endregion
 
@@ -31,15 +33,16 @@ namespace smallpt {
 	//__constant__ Sphere dev_spheres[9];
 
 	const Sphere g_spheres[] = {
-		Sphere(1e5,  Vector3(1e5 + 1, 40.8, 81.6),   Vector3(),   Vector3(0.75,0.25,0.25), Reflection_t::Diffuse),	 //Left
-		Sphere(1e5,  Vector3(-1e5 + 99, 40.8, 81.6), Vector3(),   Vector3(0.25,0.25,0.75), Reflection_t::Diffuse),	 //Right
-		Sphere(1e5,  Vector3(50, 40.8, 1e5),         Vector3(),   Vector3(0.75),           Reflection_t::Diffuse),	 //Back
-		Sphere(1e5,  Vector3(50, 40.8, -1e5 + 170),  Vector3(),   Vector3(),               Reflection_t::Diffuse),	 //Front
-		Sphere(1e5,  Vector3(50, 1e5, 81.6),         Vector3(),   Vector3(0.75),           Reflection_t::Diffuse),	 //Bottom
-		Sphere(1e5,  Vector3(50, -1e5 + 81.6, 81.6), Vector3(),   Vector3(0.75),           Reflection_t::Diffuse),	 //Top
-		Sphere(16.5, Vector3(27, 16.5, 47),          Vector3(),   Vector3(0.999),          Reflection_t::Specular),	 //Mirror
-		Sphere(16.5, Vector3(73, 16.5, 78),          Vector3(),   Vector3(0.999),          Reflection_t::Refractive),//Glass
-		Sphere(600,	 Vector3(50, 681.6 - .27, 81.6), Vector3(12), Vector3(),               Reflection_t::Diffuse)	 //Light
+		Sphere(1e5,  Vector3(1e5 + 1, 40.8, 81.6),   Vector3(),   Vector3(0.15,0.85,0.25), Reflection_t::Diffuse),  //Left
+		Sphere(1e5,  Vector3(-1e5 + 99, 40.8, 81.6), Vector3(),   Vector3(0.13,0.73,0.81), Reflection_t::Diffuse),  //Right
+		Sphere(1e5,  Vector3(50, 40.8, 1e5),         Vector3(),   Vector3(0.75),           Reflection_t::Diffuse),  //Back
+		Sphere(1e5,  Vector3(50, 40.8, -1e5 + 170),  Vector3(),   Vector3(0.75),               Reflection_t::Diffuse),  //Front
+		Sphere(1e5,  Vector3(50, 1e5, 81.6),         Vector3(),   Vector3(0.75),           Reflection_t::Diffuse),  //Bottom
+		Sphere(1e5,  Vector3(50, -1e5 + 81.6, 81.6), Vector3(),   Vector3(0.75),           Reflection_t::Diffuse),  //Top
+		Sphere(16.5, Vector3(27, 16.5, 47),          Vector3(),   Vector3(0.999),          Reflection_t::Specular),  //Mirror
+		Sphere(16.5, Vector3(73, 16.5, 78),          Vector3(),   Vector3(0.999),          Reflection_t::Diffuse),//Glass
+		Sphere(8.5, Vector3(73, 53.5, 78),          Vector3(),   Vector3(0.999),          Reflection_t::Refractive),//Glass
+		Sphere(600,  Vector3(50, 681.6 - .27, 81.6), Vector3(12), Vector3(),               Reflection_t::Diffuse)  //Light	
 	};
 
 	__device__ inline bool Intersect(const Sphere* dev_spheres, 
@@ -118,57 +121,55 @@ namespace smallpt {
 			}
 		}
 	}
+	__global__ static void kernel(const Sphere* dev_spheres,
+		std::size_t nb_spheres,
+		std::uint32_t w,
+		std::uint32_t h_full,
+		std::uint32_t h_local,
+		Vector3* Ls,
+		std::uint32_t nb_samples,
+		std::uint32_t y_offset) {
+			const std::uint32_t x = threadIdx.x + blockIdx.x * blockDim.x;
+			const std::uint32_t y_local = threadIdx.y + blockIdx.y * blockDim.y;
 
-	__global__ static void kernel(const Sphere* dev_spheres, 
-								  std::size_t nb_spheres,
-								  std::uint32_t w, 
-								  std::uint32_t h, 
-								  Vector3* Ls, 
-								  std::uint32_t nb_samples,
-								  std::uint32_t y_offset) {
-		
-		const std::uint32_t x = threadIdx.x + blockIdx.x * blockDim.x;
-		const std::uint32_t y_local = threadIdx.y + blockIdx.y * blockDim.y;
-		const std::uint32_t y = y_offset + y_local;
+			if (x >= w || y_local >= h_local) return;
 
-		if (x >= w || y_local >= h / gridDim.y / blockDim.y) return;
+			const std::uint32_t y = y_offset + y_local;
+			const std::uint32_t offset = x + y_local * w;
 
-		const std::uint32_t offset = x + y_local * w;
+			// RNG
+			curandState state;
+			curand_init(offset, 0u, 0u, &state);
 
+			const Vector3 eye = { 50.0, 52.0, 295.6 };
+			const Vector3 gaze = Normalize(Vector3(0.0, -0.042612, -1.0));
+			const double fov = 0.5135;
+			const Vector3 cx = { w * fov / h_full, 0.0, 0.0 };
+			const Vector3 cy = Normalize(cx.Cross(gaze)) * fov;
 
-		// RNG
-		curandState state;
-		curand_init(offset, 0u, 0u, &state);
+			std::size_t i = (h_local - 1u - y_local) * w + x;
 
-		const Vector3 eye = { 50.0, 52.0, 295.6 };
-		const Vector3 gaze = Normalize(Vector3(0.0, -0.042612, -1.0));
-		const double fov = 0.5135;
-		const Vector3 cx = { w * fov / h, 0.0, 0.0 };
-		const Vector3 cy = Normalize(cx.Cross(gaze)) * fov;
+			for (std::size_t sy = 0u; sy < 2u; ++sy) {
+				for (std::size_t sx = 0u; sx < 2u; ++sx) {
+					Vector3 L;
 
-		for (std::size_t sy = 0u, i = (h - 1u - y) * w + x; sy < 2u; ++sy) { // 2 subpixel row
+					for (std::size_t s = 0u; s < nb_samples; ++s) {
+						const double u1 = 2.0 * curand_uniform_double(&state);
+						const double u2 = 2.0 * curand_uniform_double(&state);
+						const double dx = (u1 < 1.0) ? sqrt(u1) - 1.0 : 1.0 - sqrt(2.0 - u1);
+						const double dy = (u2 < 1.0) ? sqrt(u2) - 1.0 : 1.0 - sqrt(2.0 - u2);
+						const Vector3 d = cx * (((sx + 0.5 + dx) * 0.5 + x) / w - 0.5) +
+									cy * (((sy + 0.5 + dy) * 0.5 + y) / h_full - 0.5) + gaze;
 
-			for (std::size_t sx = 0u; sx < 2u; ++sx) { // 2 subpixel column
-
-				Vector3 L;
-
-				for (std::size_t s = 0u; s < nb_samples; ++s) { // samples per subpixel
-					const double u1 = 2.0 * curand_uniform_double(&state);
-					const double u2 = 2.0 * curand_uniform_double(&state);
-					const double dx = (u1 < 1.0) ? sqrt(u1) - 1.0 : 1.0 - sqrt(2.0 - u1);
-					const double dy = (u2 < 1.0) ? sqrt(u2) - 1.0 : 1.0 - sqrt(2.0 - u2);
-					const Vector3 d = cx * (((sx + 0.5 + dx) * 0.5 + x) / w - 0.5) +
-						              cy * (((sy + 0.5 + dy) * 0.5 + y) / h - 0.5) + gaze;
-					
-					L += Radiance(dev_spheres, nb_spheres, 
-						Ray(eye + d * 130, Normalize(d), EPSILON_SPHERE), &state) 
+						L += Radiance(dev_spheres, nb_spheres,
+							Ray(eye + d * 130, Normalize(d), EPSILON_SPHERE), &state)
 						* (1.0 / nb_samples);
-				}
-				
+					}
+
 				Ls[i] += 0.25 * Clamp(L);
 			}
+			}
 		}
-	}
 
 	static void Render_MPI(int rank, int world_size, std::uint32_t nb_samples) noexcept {
 		const std::uint32_t w = 1024u;
@@ -191,8 +192,9 @@ namespace smallpt {
 		dim3 nthreads(16, 16);
 	
 		// 注意：需要修改 kernel，支持起始 y 坐标（传入 y_offset）
-		kernel<<<nblocks, nthreads>>>(dev_spheres, sizeof(g_spheres)/sizeof(g_spheres[0]),
-									  w, h, dev_Ls, nb_samples, y_start);
+		kernel<<<nblocks, nthreads>>>(dev_spheres,
+			sizeof(g_spheres)/sizeof(g_spheres[0]),
+			w, h, h_local, dev_Ls, nb_samples, y_start);
 	
 		Vector3* Ls_local = (Vector3*)malloc(nb_pixels_local * sizeof(Vector3));
 		cudaMemcpy(Ls_local, dev_Ls, nb_pixels_local * sizeof(Vector3), cudaMemcpyDeviceToHost);
@@ -207,8 +209,21 @@ namespace smallpt {
 				   0, MPI_COMM_WORLD);
 	
 		if (rank == 0) {
-			WritePPM(w, h, Ls_total);
+			Vector3* flipped_total = (Vector3*)malloc(nb_pixels_total * sizeof(Vector3));
+			for (int r = 0; r < world_size; ++r) {
+				int y_offset = r * h_local;
+				for (int y = 0; y < h_local; ++y) {
+					for (int x = 0; x < w; ++x) {
+						int src_idx = (r * h_local + y) * w + x;                       // gather 顺序
+						int dst_idx = ((world_size - 1 - r) * h_local + y) * w + x;   // flip 之后的正确位置
+						flipped_total[dst_idx] = Ls_total[src_idx];
+					}
+				}
+			}
+			WritePPM(w, h, flipped_total);
+			free(flipped_total);
 			free(Ls_total);
+
 		}
 	
 		free(Ls_local);
@@ -218,16 +233,29 @@ namespace smallpt {
 }
 
 int main(int argc, char* argv[]) {
+	auto start = Clock::now();
 	MPI_Init(&argc, &argv);
 
     int rank, world_size;
     MPI_Comm_rank(MPI_COMM_WORLD, &rank);
     MPI_Comm_size(MPI_COMM_WORLD, &world_size);
 
+	int device_count;
+	cudaGetDeviceCount(&device_count);
+	cudaSetDevice(rank);
+
+
+
 	const std::uint32_t nb_samples = (2 == argc) ? atoi(argv[1]) / 4 : 1;
 	smallpt::Render_MPI(rank, world_size, nb_samples);
 
     MPI_Finalize();
+
+	auto end = Clock::now();
+    auto duration_ms = std::chrono::duration_cast<std::chrono::milliseconds>(end - start).count();
+
+	std::cout << "\n[Render completed] Samples: " << nb_samples * 4
+              << " | Time elapsed: " << duration_ms << " ms" << std::endl;
 
 	return 0;
 }

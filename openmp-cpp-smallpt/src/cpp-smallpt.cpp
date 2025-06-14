@@ -8,6 +8,7 @@
 #include "specular.hpp"
 #include "sphere.hpp"
 #include <chrono>
+#include <omp.h>
 
 #pragma endregion
 
@@ -140,7 +141,7 @@ namespace smallpt {
 
 		#pragma omp parallel for schedule(static)
 		for (int y = 0; y < static_cast< int >(h); ++y) { // pixel row
-
+		// for (int y = 0; y < h; ++y) { // pixel row
 			for (std::size_t x = 0u; x < w; ++x) { // pixel column
 				
 				for (std::size_t sy = 0u, i = (h - 1u - y) * w + x; sy < 2u; ++sy) { // 2 subpixel row
@@ -148,7 +149,7 @@ namespace smallpt {
 					for (std::size_t sx = 0u; sx < 2u; ++sx) { // 2 subpixel column
 						
 						Vector3 L;
-						
+
 						for (std::size_t s = 0u; s < nb_samples; ++s) { // samples per subpixel
 							
 							const double u1 = 2.0 * rng.Uniform();
@@ -172,6 +173,18 @@ namespace smallpt {
 }
 
 int main(int argc, char* argv[]) {
+	const char* omp_env = std::getenv("OMP_NUM_THREADS");
+    if (omp_env) {
+        int num_threads = std::atoi(omp_env);
+        if (num_threads > 0) {
+            omp_set_num_threads(num_threads);
+            std::cout << "[Info] Using OMP_NUM_THREADS = " << num_threads << std::endl;
+        } else {
+            std::cout << "[Warning] Invalid OMP_NUM_THREADS value, using default.\n";
+        }
+    } else {
+        std::cout << "[Info] OMP_NUM_THREADS not set, using default thread count.\n";
+    }
 	const std::uint32_t nb_samples = (2 == argc) ? atoi(argv[1]) / 4 : 1;
 	auto start = Clock::now();
 
