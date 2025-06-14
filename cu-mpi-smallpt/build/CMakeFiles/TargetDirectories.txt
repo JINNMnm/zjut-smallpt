@@ -1,0 +1,3 @@
+/ssd10/jxc/smallpt/cu-mpi-smallpt/build/CMakeFiles/cu_mpi_smallpt.dir
+/ssd10/jxc/smallpt/cu-mpi-smallpt/build/CMakeFiles/edit_cache.dir
+/ssd10/jxc/smallpt/cu-mpi-smallpt/build/CMakeFiles/rebuild_cache.dir

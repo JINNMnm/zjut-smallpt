@@ -1,0 +1,745 @@
+The system is: Linux - 5.15.0-122-generic - x86_64
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: /ssd7/jxc/miniconda3/envs/mamba/bin/x86_64-conda-linux-gnu-c++ 
+Build flags: -fvisibility-inlines-hidden;-fmessage-length=0;-march=nocona;-mtune=haswell;-ftree-vectorize;-fPIC;-fstack-protector-strong;-fno-plt;-O2;-ffunction-sections;-pipe;-isystem;/ssd7/jxc/miniconda3/envs/mamba/include
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+
+The CXX compiler identification is GNU, found in "/ssd10/jxc/smallpt/cu-smallpt-abla/build/CMakeFiles/3.22.1/CompilerIdCXX/a.out"
+
+Checking whether the CUDA compiler is NVIDIA using "" matched "nvcc: NVIDIA \(R\) Cuda compiler driver":
+nvcc: NVIDIA (R) Cuda compiler driver
+Copyright (c) 2005-2023 NVIDIA Corporation
+Built on Tue_Feb__7_19:32:13_PST_2023
+Cuda compilation tools, release 12.1, V12.1.66
+Build cuda_12.1.r12.1/compiler.32415258_0
+Compiling the CUDA compiler identification source file "CMakeCUDACompilerId.cu" succeeded.
+Compiler: /usr/local/cuda-12.1/bin/nvcc 
+Build flags: 
+Id flags: --keep;--keep-dir;tmp -v
+
+The output was:
+0
+#$ _NVVM_BRANCH_=nvvm
+#$ _SPACE_= 
+#$ _CUDART_=cudart
+#$ _HERE_=/usr/local/cuda-12.1/bin
+#$ _THERE_=/usr/local/cuda-12.1/bin
+#$ _TARGET_SIZE_=
+#$ _TARGET_DIR_=
+#$ _TARGET_DIR_=targets/x86_64-linux
+#$ TOP=/usr/local/cuda-12.1/bin/..
+#$ NVVMIR_LIBRARY_DIR=/usr/local/cuda-12.1/bin/../nvvm/libdevice
+#$ LD_LIBRARY_PATH=/usr/local/cuda-12.1/bin/../lib:/usr/local/cuda-11.6/lib64
+#$ PATH=/usr/local/cuda-12.1/bin/../nvvm/bin:/usr/local/cuda-12.1/bin:/usr/local/cuda-12.1/bin:/home/jxc/.vscode-server/cli/servers/Stable-19e0f9e681ecb8e5c09d8784acaa601316ca4571/server/bin/remote-cli:/home/jxc/.local/bin:/usr/local/cuda-12.1/bin:/ssd7/jxc/miniconda3/envs/mamba/bin:/ssd7/jxc/miniconda3/condabin:/usr/local/cuda-11.6/bin:/home/jxc/.local/bin:/usr/local/cuda-11.6/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/jxc/.vscode-server/extensions/ms-python.debugpy-2025.8.0-linux-x64/bundled/scripts/noConfigScripts
+#$ INCLUDES="-I/usr/local/cuda-12.1/bin/../targets/x86_64-linux/include"  
+#$ LIBRARIES=  "-L/usr/local/cuda-12.1/bin/../targets/x86_64-linux/lib/stubs" "-L/usr/local/cuda-12.1/bin/../targets/x86_64-linux/lib"
+#$ CUDAFE_FLAGS=
+#$ PTXAS_FLAGS=
+#$ rm tmp/a_dlink.reg.c
+#$ gcc -D__CUDA_ARCH_LIST__=520 -E -x c++ -D__CUDACC__ -D__NVCC__  "-I/usr/local/cuda-12.1/bin/../targets/x86_64-linux/include"    -D__CUDACC_VER_MAJOR__=12 -D__CUDACC_VER_MINOR__=1 -D__CUDACC_VER_BUILD__=66 -D__CUDA_API_VER_MAJOR__=12 -D__CUDA_API_VER_MINOR__=1 -D__NVCC_DIAG_PRAGMA_SUPPORT__=1 -include "cuda_runtime.h" -m64 "CMakeCUDACompilerId.cu" -o "tmp/CMakeCUDACompilerId.cpp4.ii" 
+#$ cudafe++ --c++17 --gnu_version=110200 --display_error_number --orig_src_file_name "CMakeCUDACompilerId.cu" --orig_src_path_name "/ssd10/jxc/smallpt/cu-smallpt-abla/build/CMakeFiles/3.22.1/CompilerIdCUDA/CMakeCUDACompilerId.cu" --allow_managed  --m64 --parse_templates --gen_c_file_name "tmp/CMakeCUDACompilerId.cudafe1.cpp" --stub_file_name "CMakeCUDACompilerId.cudafe1.stub.c" --gen_module_id_file --module_id_file_name "tmp/CMakeCUDACompilerId.module_id" "tmp/CMakeCUDACompilerId.cpp4.ii" 
+#$ gcc -D__CUDA_ARCH__=520 -D__CUDA_ARCH_LIST__=520 -E -x c++  -DCUDA_DOUBLE_MATH_FUNCTIONS -D__CUDACC__ -D__NVCC__  "-I/usr/local/cuda-12.1/bin/../targets/x86_64-linux/include"    -D__CUDACC_VER_MAJOR__=12 -D__CUDACC_VER_MINOR__=1 -D__CUDACC_VER_BUILD__=66 -D__CUDA_API_VER_MAJOR__=12 -D__CUDA_API_VER_MINOR__=1 -D__NVCC_DIAG_PRAGMA_SUPPORT__=1 -include "cuda_runtime.h" -m64 "CMakeCUDACompilerId.cu" -o "tmp/CMakeCUDACompilerId.cpp1.ii" 
+#$ cicc --c++17 --gnu_version=110200 --display_error_number --orig_src_file_name "CMakeCUDACompilerId.cu" --orig_src_path_name "/ssd10/jxc/smallpt/cu-smallpt-abla/build/CMakeFiles/3.22.1/CompilerIdCUDA/CMakeCUDACompilerId.cu" --allow_managed   -arch compute_52 -m64 --no-version-ident -ftz=0 -prec_div=1 -prec_sqrt=1 -fmad=1 --include_file_name "CMakeCUDACompilerId.fatbin.c" -tused --module_id_file_name "tmp/CMakeCUDACompilerId.module_id" --gen_c_file_name "tmp/CMakeCUDACompilerId.cudafe1.c" --stub_file_name "tmp/CMakeCUDACompilerId.cudafe1.stub.c" --gen_device_file_name "tmp/CMakeCUDACompilerId.cudafe1.gpu"  "tmp/CMakeCUDACompilerId.cpp1.ii" -o "tmp/CMakeCUDACompilerId.ptx"
+#$ ptxas -arch=sm_52 -m64  "tmp/CMakeCUDACompilerId.ptx"  -o "tmp/CMakeCUDACompilerId.sm_52.cubin" 
+#$ fatbinary --create="tmp/CMakeCUDACompilerId.fatbin" -64 --cicc-cmdline="-ftz=0 -prec_div=1 -prec_sqrt=1 -fmad=1 " "--image3=kind=elf,sm=52,file=tmp/CMakeCUDACompilerId.sm_52.cubin" "--image3=kind=ptx,sm=52,file=tmp/CMakeCUDACompilerId.ptx" --embedded-fatbin="tmp/CMakeCUDACompilerId.fatbin.c" 
+#$ gcc -D__CUDA_ARCH__=520 -D__CUDA_ARCH_LIST__=520 -c -x c++  -DCUDA_DOUBLE_MATH_FUNCTIONS "-I/usr/local/cuda-12.1/bin/../targets/x86_64-linux/include"   -m64 "tmp/CMakeCUDACompilerId.cudafe1.cpp" -o "tmp/CMakeCUDACompilerId.o" 
+#$ nvlink -m64 --arch=sm_52 --register-link-binaries="tmp/a_dlink.reg.c"    "-L/usr/local/cuda-12.1/bin/../targets/x86_64-linux/lib/stubs" "-L/usr/local/cuda-12.1/bin/../targets/x86_64-linux/lib" -cpu-arch=X86_64 "tmp/CMakeCUDACompilerId.o"  -lcudadevrt  -o "tmp/a_dlink.sm_52.cubin" --host-ccbin "gcc"
+#$ fatbinary --create="tmp/a_dlink.fatbin" -64 --cicc-cmdline="-ftz=0 -prec_div=1 -prec_sqrt=1 -fmad=1 " -link "--image3=kind=elf,sm=52,file=tmp/a_dlink.sm_52.cubin" --embedded-fatbin="tmp/a_dlink.fatbin.c" 
+#$ gcc -D__CUDA_ARCH_LIST__=520 -c -x c++ -DFATBINFILE="\"tmp/a_dlink.fatbin.c\"" -DREGISTERLINKBINARYFILE="\"tmp/a_dlink.reg.c\"" -I. -D__NV_EXTRA_INITIALIZATION= -D__NV_EXTRA_FINALIZATION= -D__CUDA_INCLUDE_COMPILER_INTERNAL_HEADERS__  "-I/usr/local/cuda-12.1/bin/../targets/x86_64-linux/include"    -D__CUDACC_VER_MAJOR__=12 -D__CUDACC_VER_MINOR__=1 -D__CUDACC_VER_BUILD__=66 -D__CUDA_API_VER_MAJOR__=12 -D__CUDA_API_VER_MINOR__=1 -D__NVCC_DIAG_PRAGMA_SUPPORT__=1 -m64 "/usr/local/cuda-12.1/bin/crt/link.stub" -o "tmp/a_dlink.o" 
+#$ g++ -D__CUDA_ARCH_LIST__=520 -m64 -Wl,--start-group "tmp/a_dlink.o" "tmp/CMakeCUDACompilerId.o"   "-L/usr/local/cuda-12.1/bin/../targets/x86_64-linux/lib/stubs" "-L/usr/local/cuda-12.1/bin/../targets/x86_64-linux/lib"  -lcudadevrt  -lcudart_static  -lrt -lpthread  -ldl  -Wl,--end-group -o "a.out" 
+
+
+Compilation of the CUDA compiler identification source "CMakeCUDACompilerId.cu" produced "a.out"
+
+The CUDA compiler identification is NVIDIA, found in "/ssd10/jxc/smallpt/cu-smallpt-abla/build/CMakeFiles/3.22.1/CompilerIdCUDA/a.out"
+
+Parsed CUDA nvcc implicit link information from above output:
+  found 'PATH=' string: [/usr/local/cuda-12.1/bin/../nvvm/bin:/usr/local/cuda-12.1/bin:/usr/local/cuda-12.1/bin:/home/jxc/.vscode-server/cli/servers/Stable-19e0f9e681ecb8e5c09d8784acaa601316ca4571/server/bin/remote-cli:/home/jxc/.local/bin:/usr/local/cuda-12.1/bin:/ssd7/jxc/miniconda3/envs/mamba/bin:/ssd7/jxc/miniconda3/condabin:/usr/local/cuda-11.6/bin:/home/jxc/.local/bin:/usr/local/cuda-11.6/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/jxc/.vscode-server/extensions/ms-python.debugpy-2025.8.0-linux-x64/bundled/scripts/noConfigScripts]
+  found 'LIBRARIES=' string: ["-L/usr/local/cuda-12.1/bin/../targets/x86_64-linux/lib/stubs" "-L/usr/local/cuda-12.1/bin/../targets/x86_64-linux/lib"]
+  considering line: [#$ rm tmp/a_dlink.reg.c]
+  considering line: [gcc -D__CUDA_ARCH_LIST__=520 -E -x c++ -D__CUDACC__ -D__NVCC__  "-I/usr/local/cuda-12.1/bin/../targets/x86_64-linux/include"    -D__CUDACC_VER_MAJOR__=12 -D__CUDACC_VER_MINOR__=1 -D__CUDACC_VER_BUILD__=66 -D__CUDA_API_VER_MAJOR__=12 -D__CUDA_API_VER_MINOR__=1 -D__NVCC_DIAG_PRAGMA_SUPPORT__=1 -include "cuda_runtime.h" -m64 "CMakeCUDACompilerId.cu" -o "tmp/CMakeCUDACompilerId.cpp4.ii" ]
+  considering line: [cudafe++ --c++17 --gnu_version=110200 --display_error_number --orig_src_file_name "CMakeCUDACompilerId.cu" --orig_src_path_name "/ssd10/jxc/smallpt/cu-smallpt-abla/build/CMakeFiles/3.22.1/CompilerIdCUDA/CMakeCUDACompilerId.cu" --allow_managed  --m64 --parse_templates --gen_c_file_name "tmp/CMakeCUDACompilerId.cudafe1.cpp" --stub_file_name "CMakeCUDACompilerId.cudafe1.stub.c" --gen_module_id_file --module_id_file_name "tmp/CMakeCUDACompilerId.module_id" "tmp/CMakeCUDACompilerId.cpp4.ii" ]
+  considering line: [gcc -D__CUDA_ARCH__=520 -D__CUDA_ARCH_LIST__=520 -E -x c++  -DCUDA_DOUBLE_MATH_FUNCTIONS -D__CUDACC__ -D__NVCC__  "-I/usr/local/cuda-12.1/bin/../targets/x86_64-linux/include"    -D__CUDACC_VER_MAJOR__=12 -D__CUDACC_VER_MINOR__=1 -D__CUDACC_VER_BUILD__=66 -D__CUDA_API_VER_MAJOR__=12 -D__CUDA_API_VER_MINOR__=1 -D__NVCC_DIAG_PRAGMA_SUPPORT__=1 -include "cuda_runtime.h" -m64 "CMakeCUDACompilerId.cu" -o "tmp/CMakeCUDACompilerId.cpp1.ii" ]
+  considering line: [cicc --c++17 --gnu_version=110200 --display_error_number --orig_src_file_name "CMakeCUDACompilerId.cu" --orig_src_path_name "/ssd10/jxc/smallpt/cu-smallpt-abla/build/CMakeFiles/3.22.1/CompilerIdCUDA/CMakeCUDACompilerId.cu" --allow_managed   -arch compute_52 -m64 --no-version-ident -ftz=0 -prec_div=1 -prec_sqrt=1 -fmad=1 --include_file_name "CMakeCUDACompilerId.fatbin.c" -tused --module_id_file_name "tmp/CMakeCUDACompilerId.module_id" --gen_c_file_name "tmp/CMakeCUDACompilerId.cudafe1.c" --stub_file_name "tmp/CMakeCUDACompilerId.cudafe1.stub.c" --gen_device_file_name "tmp/CMakeCUDACompilerId.cudafe1.gpu"  "tmp/CMakeCUDACompilerId.cpp1.ii" -o "tmp/CMakeCUDACompilerId.ptx"]
+  considering line: [ptxas -arch=sm_52 -m64  "tmp/CMakeCUDACompilerId.ptx"  -o "tmp/CMakeCUDACompilerId.sm_52.cubin" ]
+  considering line: [fatbinary --create="tmp/CMakeCUDACompilerId.fatbin" -64 --cicc-cmdline="-ftz=0 -prec_div=1 -prec_sqrt=1 -fmad=1 " "--image3=kind=elf,sm=52,file=tmp/CMakeCUDACompilerId.sm_52.cubin" "--image3=kind=ptx,sm=52,file=tmp/CMakeCUDACompilerId.ptx" --embedded-fatbin="tmp/CMakeCUDACompilerId.fatbin.c" ]
+  considering line: [gcc -D__CUDA_ARCH__=520 -D__CUDA_ARCH_LIST__=520 -c -x c++  -DCUDA_DOUBLE_MATH_FUNCTIONS "-I/usr/local/cuda-12.1/bin/../targets/x86_64-linux/include"   -m64 "tmp/CMakeCUDACompilerId.cudafe1.cpp" -o "tmp/CMakeCUDACompilerId.o" ]
+  considering line: [nvlink -m64 --arch=sm_52 --register-link-binaries="tmp/a_dlink.reg.c"    "-L/usr/local/cuda-12.1/bin/../targets/x86_64-linux/lib/stubs" "-L/usr/local/cuda-12.1/bin/../targets/x86_64-linux/lib" -cpu-arch=X86_64 "tmp/CMakeCUDACompilerId.o"  -lcudadevrt  -o "tmp/a_dlink.sm_52.cubin" --host-ccbin "gcc"]
+    ignoring nvlink line
+  considering line: [fatbinary --create="tmp/a_dlink.fatbin" -64 --cicc-cmdline="-ftz=0 -prec_div=1 -prec_sqrt=1 -fmad=1 " -link "--image3=kind=elf,sm=52,file=tmp/a_dlink.sm_52.cubin" --embedded-fatbin="tmp/a_dlink.fatbin.c" ]
+  considering line: [gcc -D__CUDA_ARCH_LIST__=520 -c -x c++ -DFATBINFILE="\"tmp/a_dlink.fatbin.c\"" -DREGISTERLINKBINARYFILE="\"tmp/a_dlink.reg.c\"" -I. -D__NV_EXTRA_INITIALIZATION= -D__NV_EXTRA_FINALIZATION= -D__CUDA_INCLUDE_COMPILER_INTERNAL_HEADERS__  "-I/usr/local/cuda-12.1/bin/../targets/x86_64-linux/include"    -D__CUDACC_VER_MAJOR__=12 -D__CUDACC_VER_MINOR__=1 -D__CUDACC_VER_BUILD__=66 -D__CUDA_API_VER_MAJOR__=12 -D__CUDA_API_VER_MINOR__=1 -D__NVCC_DIAG_PRAGMA_SUPPORT__=1 -m64 "/usr/local/cuda-12.1/bin/crt/link.stub" -o "tmp/a_dlink.o" ]
+  considering line: [g++ -D__CUDA_ARCH_LIST__=520 -m64 -Wl,--start-group "tmp/a_dlink.o" "tmp/CMakeCUDACompilerId.o"   "-L/usr/local/cuda-12.1/bin/../targets/x86_64-linux/lib/stubs" "-L/usr/local/cuda-12.1/bin/../targets/x86_64-linux/lib"  -lcudadevrt  -lcudart_static  -lrt -lpthread  -ldl  -Wl,--end-group -o "a.out" ]
+    extracted link line: [g++ -D__CUDA_ARCH_LIST__=520 -m64 -Wl,--start-group "tmp/a_dlink.o" "tmp/CMakeCUDACompilerId.o"   "-L/usr/local/cuda-12.1/bin/../targets/x86_64-linux/lib/stubs" "-L/usr/local/cuda-12.1/bin/../targets/x86_64-linux/lib"  -lcudadevrt  -lcudart_static  -lrt -lpthread  -ldl  -Wl,--end-group -o "a.out" ]
+  considering line: []
+  extracted link launcher name: [g++]
+  found link launcher absolute path: [/ssd7/jxc/miniconda3/envs/mamba/bin/g++]
+
+  link line regex: [^( *|.*[/\])(x86_64-conda-linux-gnu-ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  link line: [cuda-fake-ld g++ -D__CUDA_ARCH_LIST__=520 -m64 -Wl,--start-group "tmp/a_dlink.o" "tmp/CMakeCUDACompilerId.o"   "-L/usr/local/cuda-12.1/bin/../targets/x86_64-linux/lib/stubs" "-L/usr/local/cuda-12.1/bin/../targets/x86_64-linux/lib"  -lcudadevrt  -lcudart_static  -lrt -lpthread  -ldl  -Wl,--end-group -o "a.out" ]
+    arg [cuda-fake-ld] ==> ignore
+    arg [g++] ==> ignore
+    arg [-D__CUDA_ARCH_LIST__=520] ==> ignore
+    arg [-m64] ==> ignore
+    arg [-Wl,--start-group] ==> ignore
+    arg [tmp/a_dlink.o] ==> ignore
+    arg [tmp/CMakeCUDACompilerId.o] ==> ignore
+    arg [-L/usr/local/cuda-12.1/bin/../targets/x86_64-linux/lib/stubs] ==> dir [/usr/local/cuda-12.1/bin/../targets/x86_64-linux/lib/stubs]
+    arg [-L/usr/local/cuda-12.1/bin/../targets/x86_64-linux/lib] ==> dir [/usr/local/cuda-12.1/bin/../targets/x86_64-linux/lib]
+    arg [-lcudadevrt] ==> lib [cudadevrt]
+    arg [-lcudart_static] ==> lib [cudart_static]
+    arg [-lrt] ==> lib [rt]
+    arg [-lpthread] ==> lib [pthread]
+    arg [-ldl] ==> lib [dl]
+    arg [-Wl,--end-group] ==> ignore
+    arg [-o] ==> ignore
+    arg [a.out] ==> ignore
+  collapse library dir [/usr/local/cuda-12.1/bin/../targets/x86_64-linux/lib/stubs] ==> [/usr/local/cuda-12.1/targets/x86_64-linux/lib/stubs]
+  collapse library dir [/usr/local/cuda-12.1/bin/../targets/x86_64-linux/lib] ==> [/usr/local/cuda-12.1/targets/x86_64-linux/lib]
+  implicit libs: [cudadevrt;cudart_static;rt;pthread;dl]
+  implicit objs: []
+  implicit dirs: [/usr/local/cuda-12.1/targets/x86_64-linux/lib/stubs;/usr/local/cuda-12.1/targets/x86_64-linux/lib]
+  implicit fwks: []
+
+
+Parsed CUDA nvcc include information from above output:
+  found 'PATH=' string: [/usr/local/cuda-12.1/bin/../nvvm/bin:/usr/local/cuda-12.1/bin:/usr/local/cuda-12.1/bin:/home/jxc/.vscode-server/cli/servers/Stable-19e0f9e681ecb8e5c09d8784acaa601316ca4571/server/bin/remote-cli:/home/jxc/.local/bin:/usr/local/cuda-12.1/bin:/ssd7/jxc/miniconda3/envs/mamba/bin:/ssd7/jxc/miniconda3/condabin:/usr/local/cuda-11.6/bin:/home/jxc/.local/bin:/usr/local/cuda-11.6/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/jxc/.vscode-server/extensions/ms-python.debugpy-2025.8.0-linux-x64/bundled/scripts/noConfigScripts]
+  found 'LIBRARIES=' string: ["-L/usr/local/cuda-12.1/bin/../targets/x86_64-linux/lib/stubs" "-L/usr/local/cuda-12.1/bin/../targets/x86_64-linux/lib"]
+  considering line: [#$ rm tmp/a_dlink.reg.c]
+  considering line: [gcc -D__CUDA_ARCH_LIST__=520 -E -x c++ -D__CUDACC__ -D__NVCC__  "-I/usr/local/cuda-12.1/bin/../targets/x86_64-linux/include"    -D__CUDACC_VER_MAJOR__=12 -D__CUDACC_VER_MINOR__=1 -D__CUDACC_VER_BUILD__=66 -D__CUDA_API_VER_MAJOR__=12 -D__CUDA_API_VER_MINOR__=1 -D__NVCC_DIAG_PRAGMA_SUPPORT__=1 -include "cuda_runtime.h" -m64 "CMakeCUDACompilerId.cu" -o "tmp/CMakeCUDACompilerId.cpp4.ii" ]
+  considering line: [cudafe++ --c++17 --gnu_version=110200 --display_error_number --orig_src_file_name "CMakeCUDACompilerId.cu" --orig_src_path_name "/ssd10/jxc/smallpt/cu-smallpt-abla/build/CMakeFiles/3.22.1/CompilerIdCUDA/CMakeCUDACompilerId.cu" --allow_managed  --m64 --parse_templates --gen_c_file_name "tmp/CMakeCUDACompilerId.cudafe1.cpp" --stub_file_name "CMakeCUDACompilerId.cudafe1.stub.c" --gen_module_id_file --module_id_file_name "tmp/CMakeCUDACompilerId.module_id" "tmp/CMakeCUDACompilerId.cpp4.ii" ]
+  considering line: [gcc -D__CUDA_ARCH__=520 -D__CUDA_ARCH_LIST__=520 -E -x c++  -DCUDA_DOUBLE_MATH_FUNCTIONS -D__CUDACC__ -D__NVCC__  "-I/usr/local/cuda-12.1/bin/../targets/x86_64-linux/include"    -D__CUDACC_VER_MAJOR__=12 -D__CUDACC_VER_MINOR__=1 -D__CUDACC_VER_BUILD__=66 -D__CUDA_API_VER_MAJOR__=12 -D__CUDA_API_VER_MINOR__=1 -D__NVCC_DIAG_PRAGMA_SUPPORT__=1 -include "cuda_runtime.h" -m64 "CMakeCUDACompilerId.cu" -o "tmp/CMakeCUDACompilerId.cpp1.ii" ]
+  considering line: [cicc --c++17 --gnu_version=110200 --display_error_number --orig_src_file_name "CMakeCUDACompilerId.cu" --orig_src_path_name "/ssd10/jxc/smallpt/cu-smallpt-abla/build/CMakeFiles/3.22.1/CompilerIdCUDA/CMakeCUDACompilerId.cu" --allow_managed   -arch compute_52 -m64 --no-version-ident -ftz=0 -prec_div=1 -prec_sqrt=1 -fmad=1 --include_file_name "CMakeCUDACompilerId.fatbin.c" -tused --module_id_file_name "tmp/CMakeCUDACompilerId.module_id" --gen_c_file_name "tmp/CMakeCUDACompilerId.cudafe1.c" --stub_file_name "tmp/CMakeCUDACompilerId.cudafe1.stub.c" --gen_device_file_name "tmp/CMakeCUDACompilerId.cudafe1.gpu"  "tmp/CMakeCUDACompilerId.cpp1.ii" -o "tmp/CMakeCUDACompilerId.ptx"]
+  considering line: [ptxas -arch=sm_52 -m64  "tmp/CMakeCUDACompilerId.ptx"  -o "tmp/CMakeCUDACompilerId.sm_52.cubin" ]
+  considering line: [fatbinary --create="tmp/CMakeCUDACompilerId.fatbin" -64 --cicc-cmdline="-ftz=0 -prec_div=1 -prec_sqrt=1 -fmad=1 " "--image3=kind=elf,sm=52,file=tmp/CMakeCUDACompilerId.sm_52.cubin" "--image3=kind=ptx,sm=52,file=tmp/CMakeCUDACompilerId.ptx" --embedded-fatbin="tmp/CMakeCUDACompilerId.fatbin.c" ]
+  considering line: [gcc -D__CUDA_ARCH__=520 -D__CUDA_ARCH_LIST__=520 -c -x c++  -DCUDA_DOUBLE_MATH_FUNCTIONS "-I/usr/local/cuda-12.1/bin/../targets/x86_64-linux/include"   -m64 "tmp/CMakeCUDACompilerId.cudafe1.cpp" -o "tmp/CMakeCUDACompilerId.o" ]
+  considering line: [nvlink -m64 --arch=sm_52 --register-link-binaries="tmp/a_dlink.reg.c"    "-L/usr/local/cuda-12.1/bin/../targets/x86_64-linux/lib/stubs" "-L/usr/local/cuda-12.1/bin/../targets/x86_64-linux/lib" -cpu-arch=X86_64 "tmp/CMakeCUDACompilerId.o"  -lcudadevrt  -o "tmp/a_dlink.sm_52.cubin" --host-ccbin "gcc"]
+    ignoring nvlink line
+  considering line: [fatbinary --create="tmp/a_dlink.fatbin" -64 --cicc-cmdline="-ftz=0 -prec_div=1 -prec_sqrt=1 -fmad=1 " -link "--image3=kind=elf,sm=52,file=tmp/a_dlink.sm_52.cubin" --embedded-fatbin="tmp/a_dlink.fatbin.c" ]
+  considering line: [gcc -D__CUDA_ARCH_LIST__=520 -c -x c++ -DFATBINFILE="\"tmp/a_dlink.fatbin.c\"" -DREGISTERLINKBINARYFILE="\"tmp/a_dlink.reg.c\"" -I. -D__NV_EXTRA_INITIALIZATION= -D__NV_EXTRA_FINALIZATION= -D__CUDA_INCLUDE_COMPILER_INTERNAL_HEADERS__  "-I/usr/local/cuda-12.1/bin/../targets/x86_64-linux/include"    -D__CUDACC_VER_MAJOR__=12 -D__CUDACC_VER_MINOR__=1 -D__CUDACC_VER_BUILD__=66 -D__CUDA_API_VER_MAJOR__=12 -D__CUDA_API_VER_MINOR__=1 -D__NVCC_DIAG_PRAGMA_SUPPORT__=1 -m64 "/usr/local/cuda-12.1/bin/crt/link.stub" -o "tmp/a_dlink.o" ]
+  considering line: [g++ -D__CUDA_ARCH_LIST__=520 -m64 -Wl,--start-group "tmp/a_dlink.o" "tmp/CMakeCUDACompilerId.o"   "-L/usr/local/cuda-12.1/bin/../targets/x86_64-linux/lib/stubs" "-L/usr/local/cuda-12.1/bin/../targets/x86_64-linux/lib"  -lcudadevrt  -lcudart_static  -lrt -lpthread  -ldl  -Wl,--end-group -o "a.out" ]
+    extracted link line: [g++ -D__CUDA_ARCH_LIST__=520 -m64 -Wl,--start-group "tmp/a_dlink.o" "tmp/CMakeCUDACompilerId.o"   "-L/usr/local/cuda-12.1/bin/../targets/x86_64-linux/lib/stubs" "-L/usr/local/cuda-12.1/bin/../targets/x86_64-linux/lib"  -lcudadevrt  -lcudart_static  -lrt -lpthread  -ldl  -Wl,--end-group -o "a.out" ]
+  considering line: []
+  extracted link launcher name: [g++]
+  found link launcher absolute path: [/ssd7/jxc/miniconda3/envs/mamba/bin/g++]
+  found 'INCLUDES=' string: ["-I/usr/local/cuda-12.1/bin/../targets/x86_64-linux/include"  ]
+
+  link line regex: [^( *|.*[/\])(x86_64-conda-linux-gnu-ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  link line: [cuda-fake-ld g++ -D__CUDA_ARCH_LIST__=520 -m64 -Wl,--start-group "tmp/a_dlink.o" "tmp/CMakeCUDACompilerId.o"   "-L/usr/local/cuda-12.1/bin/../targets/x86_64-linux/lib/stubs" "-L/usr/local/cuda-12.1/bin/../targets/x86_64-linux/lib"  -lcudadevrt  -lcudart_static  -lrt -lpthread  -ldl  -Wl,--end-group -o "a.out" ]
+    arg [cuda-fake-ld] ==> ignore
+    arg [g++] ==> ignore
+    arg [-D__CUDA_ARCH_LIST__=520] ==> ignore
+    arg [-m64] ==> ignore
+    arg [-Wl,--start-group] ==> ignore
+    arg [tmp/a_dlink.o] ==> ignore
+    arg [tmp/CMakeCUDACompilerId.o] ==> ignore
+    arg [-L/usr/local/cuda-12.1/bin/../targets/x86_64-linux/lib/stubs] ==> dir [/usr/local/cuda-12.1/bin/../targets/x86_64-linux/lib/stubs]
+    arg [-L/usr/local/cuda-12.1/bin/../targets/x86_64-linux/lib] ==> dir [/usr/local/cuda-12.1/bin/../targets/x86_64-linux/lib]
+    arg [-lcudadevrt] ==> lib [cudadevrt]
+    arg [-lcudart_static] ==> lib [cudart_static]
+    arg [-lrt] ==> lib [rt]
+    arg [-lpthread] ==> lib [pthread]
+    arg [-ldl] ==> lib [dl]
+    arg [-Wl,--end-group] ==> ignore
+    arg [-o] ==> ignore
+    arg [a.out] ==> ignore
+  collapse library dir [/usr/local/cuda-12.1/bin/../targets/x86_64-linux/lib/stubs] ==> [/usr/local/cuda-12.1/targets/x86_64-linux/lib/stubs]
+  collapse library dir [/usr/local/cuda-12.1/bin/../targets/x86_64-linux/lib] ==> [/usr/local/cuda-12.1/targets/x86_64-linux/lib]
+  implicit libs: [cudadevrt;cudart_static;rt;pthread;dl]
+  implicit objs: []
+  implicit dirs: [/usr/local/cuda-12.1/targets/x86_64-linux/lib/stubs;/usr/local/cuda-12.1/targets/x86_64-linux/lib]
+  implicit fwks: []
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: /ssd10/jxc/smallpt/cu-smallpt-abla/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_88e3d/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_88e3d.dir/build.make CMakeFiles/cmTC_88e3d.dir/build
+gmake[1]: Entering directory '/ssd10/jxc/smallpt/cu-smallpt-abla/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_88e3d.dir/CMakeCXXCompilerABI.cpp.o
+/ssd7/jxc/miniconda3/envs/mamba/bin/x86_64-conda-linux-gnu-c++   -fvisibility-inlines-hidden -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /ssd7/jxc/miniconda3/envs/mamba/include    -v -o CMakeFiles/cmTC_88e3d.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp
+Reading specs from /ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/specs
+could not find specs file conda.specs
+COLLECT_GCC=/ssd7/jxc/miniconda3/envs/mamba/bin/x86_64-conda-linux-gnu-c++
+Target: x86_64-conda-linux-gnu
+Configured with: ../configure --prefix=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1650668893531/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho --with-slibdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1650668893531/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --libdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1650668893531/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --mandir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1650668893531/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/man --build=x86_64-conda-linux-gnu --host=x86_64-conda-linux-gnu --target=x86_64-conda-linux-gnu --enable-default-pie --enable-languages=c,c++,fortran,objc,obj-c++ --enable-__cxa_atexit --disable-libmudflap --enable-libgomp --disable-libssp --enable-libquadmath --enable-libquadmath-support --enable-libsanitizer --enable-lto --enable-threads=posix --enable-target-optspace --enable-plugin --enable-gold --disable-nls --disable-bootstrap --disable-multilib --enable-long-long --with-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1650668893531/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/x86_64-conda-linux-gnu/sysroot --with-build-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1650668893531/_build_env/x86_64-conda-linux-gnu/sysroot --with-gxx-include-dir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1650668893531/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/x86_64-conda-linux-gnu/include/c++/11.2.0 --with-pkgversion='conda-forge gcc 11.2.0-16' --with-bugurl=https://github.com/conda-forge/ctng-compilers-feedstock/issues/new/choose
+Thread model: posix
+Supported LTO compression algorithms: zlib
+gcc version 11.2.0 (conda-forge gcc 11.2.0-16) 
+COLLECT_GCC_OPTIONS='-fvisibility-inlines-hidden' '-fmessage-length=0' '-march=nocona' '-mtune=haswell' '-ftree-vectorize' '-fPIC' '-fstack-protector-strong' '-fno-plt' '-O2' '-ffunction-sections' '-pipe' '-isystem' '/ssd7/jxc/miniconda3/envs/mamba/include' '-v' '-o' 'CMakeFiles/cmTC_88e3d.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-dumpdir' 'CMakeFiles/cmTC_88e3d.dir/'
+ /ssd7/jxc/miniconda3/envs/mamba/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.2.0/cc1plus -quiet -v -iprefix /ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/ -isysroot /ssd7/jxc/miniconda3/envs/mamba/bin/../x86_64-conda-linux-gnu/sysroot -D_GNU_SOURCE -isystem /ssd7/jxc/miniconda3/envs/mamba/include /usr/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_88e3d.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -march=nocona -mtune=haswell -O2 -version -fvisibility-inlines-hidden -fmessage-length=0 -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -ffunction-sections -o - |
+ /ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/bin/as -v --64 -o CMakeFiles/cmTC_88e3d.dir/CMakeCXXCompilerABI.cpp.o
+GNU assembler version 2.36.1 (x86_64-conda-linux-gnu) using BFD version (GNU Binutils) 2.36.1
+GNU C++17 (conda-forge gcc 11.2.0-16) version 11.2.0 (x86_64-conda-linux-gnu)
+	compiled by GNU C version 11.2.0, GMP version 6.1.0, MPFR version 3.1.6, MPC version 1.0.3, isl version isl-0.18-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring duplicate directory "/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/11.2.0/include"
+ignoring nonexistent directory "/ssd7/jxc/miniconda3/envs/mamba/bin/../x86_64-conda-linux-gnu/sysroot/usr/local/include"
+ignoring duplicate directory "/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/11.2.0/include-fixed"
+ignoring duplicate directory "/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /ssd7/jxc/miniconda3/envs/mamba/include
+ /ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/include
+ /ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/include-fixed
+ /ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/include
+ /ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/../../x86_64-conda-linux-gnu/include/c++/11.2.0
+ /ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/../../x86_64-conda-linux-gnu/include/c++/11.2.0/x86_64-conda-linux-gnu
+ /ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/../../x86_64-conda-linux-gnu/include/c++/11.2.0/backward
+ /ssd7/jxc/miniconda3/envs/mamba/bin/../x86_64-conda-linux-gnu/sysroot/usr/include
+End of search list.
+GNU C++17 (conda-forge gcc 11.2.0-16) version 11.2.0 (x86_64-conda-linux-gnu)
+	compiled by GNU C version 11.2.0, GMP version 6.1.0, MPFR version 3.1.6, MPC version 1.0.3, isl version isl-0.18-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: b5a2d72bed81fc692f33193d6bddc0d0
+COMPILER_PATH=/ssd7/jxc/miniconda3/envs/mamba/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.2.0/:/ssd7/jxc/miniconda3/envs/mamba/bin/../libexec/gcc/:/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/bin/
+LIBRARY_PATH=/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/:/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/:/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/lib/../lib/:/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../lib/:/ssd7/jxc/miniconda3/envs/mamba/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib/:/ssd7/jxc/miniconda3/envs/mamba/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/:/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/lib/:/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../:/ssd7/jxc/miniconda3/envs/mamba/bin/../x86_64-conda-linux-gnu/sysroot/lib/:/ssd7/jxc/miniconda3/envs/mamba/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/
+COLLECT_GCC_OPTIONS='-fvisibility-inlines-hidden' '-fmessage-length=0' '-march=nocona' '-mtune=haswell' '-ftree-vectorize' '-fPIC' '-fstack-protector-strong' '-fno-plt' '-O2' '-ffunction-sections' '-pipe' '-isystem' '/ssd7/jxc/miniconda3/envs/mamba/include' '-v' '-o' 'CMakeFiles/cmTC_88e3d.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-dumpdir' 'CMakeFiles/cmTC_88e3d.dir/CMakeCXXCompilerABI.cpp.'
+Linking CXX executable cmTC_88e3d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_88e3d.dir/link.txt --verbose=1
+/ssd7/jxc/miniconda3/envs/mamba/bin/x86_64-conda-linux-gnu-c++ -fvisibility-inlines-hidden -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /ssd7/jxc/miniconda3/envs/mamba/include  -Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,--allow-shlib-undefined -Wl,-rpath,/ssd7/jxc/miniconda3/envs/mamba/lib -Wl,-rpath-link,/ssd7/jxc/miniconda3/envs/mamba/lib -L/ssd7/jxc/miniconda3/envs/mamba/lib -v CMakeFiles/cmTC_88e3d.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_88e3d 
+Reading specs from /ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/specs
+could not find specs file conda.specs
+COLLECT_GCC=/ssd7/jxc/miniconda3/envs/mamba/bin/x86_64-conda-linux-gnu-c++
+COLLECT_LTO_WRAPPER=/ssd7/jxc/miniconda3/envs/mamba/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.2.0/lto-wrapper
+Target: x86_64-conda-linux-gnu
+Configured with: ../configure --prefix=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1650668893531/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho --with-slibdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1650668893531/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --libdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1650668893531/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --mandir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1650668893531/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/man --build=x86_64-conda-linux-gnu --host=x86_64-conda-linux-gnu --target=x86_64-conda-linux-gnu --enable-default-pie --enable-languages=c,c++,fortran,objc,obj-c++ --enable-__cxa_atexit --disable-libmudflap --enable-libgomp --disable-libssp --enable-libquadmath --enable-libquadmath-support --enable-libsanitizer --enable-lto --enable-threads=posix --enable-target-optspace --enable-plugin --enable-gold --disable-nls --disable-bootstrap --disable-multilib --enable-long-long --with-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1650668893531/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/x86_64-conda-linux-gnu/sysroot --with-build-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1650668893531/_build_env/x86_64-conda-linux-gnu/sysroot --with-gxx-include-dir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1650668893531/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/x86_64-conda-linux-gnu/include/c++/11.2.0 --with-pkgversion='conda-forge gcc 11.2.0-16' --with-bugurl=https://github.com/conda-forge/ctng-compilers-feedstock/issues/new/choose
+Thread model: posix
+Supported LTO compression algorithms: zlib
+gcc version 11.2.0 (conda-forge gcc 11.2.0-16) 
+COMPILER_PATH=/ssd7/jxc/miniconda3/envs/mamba/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.2.0/:/ssd7/jxc/miniconda3/envs/mamba/bin/../libexec/gcc/:/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/bin/
+LIBRARY_PATH=/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/:/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/:/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/lib/../lib/:/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../lib/:/ssd7/jxc/miniconda3/envs/mamba/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib/:/ssd7/jxc/miniconda3/envs/mamba/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/:/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/lib/:/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../:/ssd7/jxc/miniconda3/envs/mamba/bin/../x86_64-conda-linux-gnu/sysroot/lib/:/ssd7/jxc/miniconda3/envs/mamba/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/
+COLLECT_GCC_OPTIONS='-fvisibility-inlines-hidden' '-fmessage-length=0' '-march=nocona' '-mtune=haswell' '-ftree-vectorize' '-fPIC' '-fstack-protector-strong' '-fno-plt' '-O2' '-ffunction-sections' '-pipe' '-isystem' '/ssd7/jxc/miniconda3/envs/mamba/include' '-L/ssd7/jxc/miniconda3/envs/mamba/lib' '-v' '-o' 'cmTC_88e3d' '-shared-libgcc' '-dumpdir' 'cmTC_88e3d.'
+ /ssd7/jxc/miniconda3/envs/mamba/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.2.0/collect2 -plugin /ssd7/jxc/miniconda3/envs/mamba/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.2.0/liblto_plugin.so -plugin-opt=/ssd7/jxc/miniconda3/envs/mamba/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccKLDYKS.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/ssd7/jxc/miniconda3/envs/mamba/bin/../x86_64-conda-linux-gnu/sysroot --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_88e3d /ssd7/jxc/miniconda3/envs/mamba/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/Scrt1.o /ssd7/jxc/miniconda3/envs/mamba/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crti.o /ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/crtbeginS.o -L/ssd7/jxc/miniconda3/envs/mamba/lib -L/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0 -L/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc -L/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/lib/../lib -L/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../lib -L/ssd7/jxc/miniconda3/envs/mamba/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib -L/ssd7/jxc/miniconda3/envs/mamba/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib -L/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/lib -L/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../.. -L/ssd7/jxc/miniconda3/envs/mamba/bin/../x86_64-conda-linux-gnu/sysroot/lib -L/ssd7/jxc/miniconda3/envs/mamba/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib -O2 --sort-common --as-needed -z relro -z now --disable-new-dtags --gc-sections --allow-shlib-undefined -rpath /ssd7/jxc/miniconda3/envs/mamba/lib -rpath-link /ssd7/jxc/miniconda3/envs/mamba/lib CMakeFiles/cmTC_88e3d.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/crtendS.o /ssd7/jxc/miniconda3/envs/mamba/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crtn.o -rpath /ssd7/jxc/miniconda3/envs/mamba/lib
+COLLECT_GCC_OPTIONS='-fvisibility-inlines-hidden' '-fmessage-length=0' '-march=nocona' '-mtune=haswell' '-ftree-vectorize' '-fPIC' '-fstack-protector-strong' '-fno-plt' '-O2' '-ffunction-sections' '-pipe' '-isystem' '/ssd7/jxc/miniconda3/envs/mamba/include' '-L/ssd7/jxc/miniconda3/envs/mamba/lib' '-v' '-o' 'cmTC_88e3d' '-shared-libgcc' '-dumpdir' 'cmTC_88e3d.'
+gmake[1]: Leaving directory '/ssd10/jxc/smallpt/cu-smallpt-abla/build/CMakeFiles/CMakeTmp'
+
+
+
+Parsed CXX implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/ssd7/jxc/miniconda3/envs/mamba/include]
+    add: [/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/include]
+    add: [/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/include-fixed]
+    add: [/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/include]
+    add: [/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/../../x86_64-conda-linux-gnu/include/c++/11.2.0]
+    add: [/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/../../x86_64-conda-linux-gnu/include/c++/11.2.0/x86_64-conda-linux-gnu]
+    add: [/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/../../x86_64-conda-linux-gnu/include/c++/11.2.0/backward]
+    add: [/ssd7/jxc/miniconda3/envs/mamba/bin/../x86_64-conda-linux-gnu/sysroot/usr/include]
+  end of search list found
+  collapse include dir [/ssd7/jxc/miniconda3/envs/mamba/include] ==> [/ssd7/jxc/miniconda3/envs/mamba/include]
+  collapse include dir [/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/include] ==> [/ssd7/jxc/miniconda3/envs/mamba/lib/gcc/x86_64-conda-linux-gnu/11.2.0/include]
+  collapse include dir [/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/include-fixed] ==> [/ssd7/jxc/miniconda3/envs/mamba/lib/gcc/x86_64-conda-linux-gnu/11.2.0/include-fixed]
+  collapse include dir [/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/include] ==> [/ssd7/jxc/miniconda3/envs/mamba/x86_64-conda-linux-gnu/include]
+  collapse include dir [/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/../../x86_64-conda-linux-gnu/include/c++/11.2.0] ==> [/ssd7/jxc/miniconda3/envs/mamba/x86_64-conda-linux-gnu/include/c++/11.2.0]
+  collapse include dir [/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/../../x86_64-conda-linux-gnu/include/c++/11.2.0/x86_64-conda-linux-gnu] ==> [/ssd7/jxc/miniconda3/envs/mamba/x86_64-conda-linux-gnu/include/c++/11.2.0/x86_64-conda-linux-gnu]
+  collapse include dir [/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/../../x86_64-conda-linux-gnu/include/c++/11.2.0/backward] ==> [/ssd7/jxc/miniconda3/envs/mamba/x86_64-conda-linux-gnu/include/c++/11.2.0/backward]
+  collapse include dir [/ssd7/jxc/miniconda3/envs/mamba/bin/../x86_64-conda-linux-gnu/sysroot/usr/include] ==> [/ssd7/jxc/miniconda3/envs/mamba/x86_64-conda-linux-gnu/sysroot/usr/include]
+  implicit include dirs: [/ssd7/jxc/miniconda3/envs/mamba/include;/ssd7/jxc/miniconda3/envs/mamba/lib/gcc/x86_64-conda-linux-gnu/11.2.0/include;/ssd7/jxc/miniconda3/envs/mamba/lib/gcc/x86_64-conda-linux-gnu/11.2.0/include-fixed;/ssd7/jxc/miniconda3/envs/mamba/x86_64-conda-linux-gnu/include;/ssd7/jxc/miniconda3/envs/mamba/x86_64-conda-linux-gnu/include/c++/11.2.0;/ssd7/jxc/miniconda3/envs/mamba/x86_64-conda-linux-gnu/include/c++/11.2.0/x86_64-conda-linux-gnu;/ssd7/jxc/miniconda3/envs/mamba/x86_64-conda-linux-gnu/include/c++/11.2.0/backward;/ssd7/jxc/miniconda3/envs/mamba/x86_64-conda-linux-gnu/sysroot/usr/include]
+
+
+Parsed CXX implicit link information from above output:
+  link line regex: [^( *|.*[/\])(x86_64-conda-linux-gnu-ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /ssd10/jxc/smallpt/cu-smallpt-abla/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_88e3d/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_88e3d.dir/build.make CMakeFiles/cmTC_88e3d.dir/build]
+  ignore line: [gmake[1]: Entering directory '/ssd10/jxc/smallpt/cu-smallpt-abla/build/CMakeFiles/CMakeTmp']
+  ignore line: [Building CXX object CMakeFiles/cmTC_88e3d.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/ssd7/jxc/miniconda3/envs/mamba/bin/x86_64-conda-linux-gnu-c++   -fvisibility-inlines-hidden -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /ssd7/jxc/miniconda3/envs/mamba/include    -v -o CMakeFiles/cmTC_88e3d.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Reading specs from /ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/specs]
+  ignore line: [could not find specs file conda.specs]
+  ignore line: [COLLECT_GCC=/ssd7/jxc/miniconda3/envs/mamba/bin/x86_64-conda-linux-gnu-c++]
+  ignore line: [Target: x86_64-conda-linux-gnu]
+  ignore line: [Configured with: ../configure --prefix=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1650668893531/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho --with-slibdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1650668893531/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --libdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1650668893531/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --mandir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1650668893531/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/man --build=x86_64-conda-linux-gnu --host=x86_64-conda-linux-gnu --target=x86_64-conda-linux-gnu --enable-default-pie --enable-languages=c c++ fortran objc obj-c++ --enable-__cxa_atexit --disable-libmudflap --enable-libgomp --disable-libssp --enable-libquadmath --enable-libquadmath-support --enable-libsanitizer --enable-lto --enable-threads=posix --enable-target-optspace --enable-plugin --enable-gold --disable-nls --disable-bootstrap --disable-multilib --enable-long-long --with-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1650668893531/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/x86_64-conda-linux-gnu/sysroot --with-build-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1650668893531/_build_env/x86_64-conda-linux-gnu/sysroot --with-gxx-include-dir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1650668893531/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/x86_64-conda-linux-gnu/include/c++/11.2.0 --with-pkgversion='conda-forge gcc 11.2.0-16' --with-bugurl=https://github.com/conda-forge/ctng-compilers-feedstock/issues/new/choose]
+  ignore line: [Thread model: posix]
+  ignore line: [Supported LTO compression algorithms: zlib]
+  ignore line: [gcc version 11.2.0 (conda-forge gcc 11.2.0-16) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-fvisibility-inlines-hidden' '-fmessage-length=0' '-march=nocona' '-mtune=haswell' '-ftree-vectorize' '-fPIC' '-fstack-protector-strong' '-fno-plt' '-O2' '-ffunction-sections' '-pipe' '-isystem' '/ssd7/jxc/miniconda3/envs/mamba/include' '-v' '-o' 'CMakeFiles/cmTC_88e3d.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-dumpdir' 'CMakeFiles/cmTC_88e3d.dir/']
+  ignore line: [ /ssd7/jxc/miniconda3/envs/mamba/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.2.0/cc1plus -quiet -v -iprefix /ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/ -isysroot /ssd7/jxc/miniconda3/envs/mamba/bin/../x86_64-conda-linux-gnu/sysroot -D_GNU_SOURCE -isystem /ssd7/jxc/miniconda3/envs/mamba/include /usr/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_88e3d.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -march=nocona -mtune=haswell -O2 -version -fvisibility-inlines-hidden -fmessage-length=0 -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -ffunction-sections -o - |]
+  ignore line: [ /ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/bin/as -v --64 -o CMakeFiles/cmTC_88e3d.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [GNU assembler version 2.36.1 (x86_64-conda-linux-gnu) using BFD version (GNU Binutils) 2.36.1]
+  ignore line: [GNU C++17 (conda-forge gcc 11.2.0-16) version 11.2.0 (x86_64-conda-linux-gnu)]
+  ignore line: [	compiled by GNU C version 11.2.0  GMP version 6.1.0  MPFR version 3.1.6  MPC version 1.0.3  isl version isl-0.18-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [ignoring duplicate directory "/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/11.2.0/include"]
+  ignore line: [ignoring nonexistent directory "/ssd7/jxc/miniconda3/envs/mamba/bin/../x86_64-conda-linux-gnu/sysroot/usr/local/include"]
+  ignore line: [ignoring duplicate directory "/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/11.2.0/include-fixed"]
+  ignore line: [ignoring duplicate directory "/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /ssd7/jxc/miniconda3/envs/mamba/include]
+  ignore line: [ /ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/include]
+  ignore line: [ /ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/include-fixed]
+  ignore line: [ /ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/include]
+  ignore line: [ /ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/../../x86_64-conda-linux-gnu/include/c++/11.2.0]
+  ignore line: [ /ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/../../x86_64-conda-linux-gnu/include/c++/11.2.0/x86_64-conda-linux-gnu]
+  ignore line: [ /ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/../../x86_64-conda-linux-gnu/include/c++/11.2.0/backward]
+  ignore line: [ /ssd7/jxc/miniconda3/envs/mamba/bin/../x86_64-conda-linux-gnu/sysroot/usr/include]
+  ignore line: [End of search list.]
+  ignore line: [GNU C++17 (conda-forge gcc 11.2.0-16) version 11.2.0 (x86_64-conda-linux-gnu)]
+  ignore line: [	compiled by GNU C version 11.2.0  GMP version 6.1.0  MPFR version 3.1.6  MPC version 1.0.3  isl version isl-0.18-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [Compiler executable checksum: b5a2d72bed81fc692f33193d6bddc0d0]
+  ignore line: [COMPILER_PATH=/ssd7/jxc/miniconda3/envs/mamba/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.2.0/:/ssd7/jxc/miniconda3/envs/mamba/bin/../libexec/gcc/:/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/bin/]
+  ignore line: [LIBRARY_PATH=/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/:/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/:/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/lib/../lib/:/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../lib/:/ssd7/jxc/miniconda3/envs/mamba/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib/:/ssd7/jxc/miniconda3/envs/mamba/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/:/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/lib/:/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../:/ssd7/jxc/miniconda3/envs/mamba/bin/../x86_64-conda-linux-gnu/sysroot/lib/:/ssd7/jxc/miniconda3/envs/mamba/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-fvisibility-inlines-hidden' '-fmessage-length=0' '-march=nocona' '-mtune=haswell' '-ftree-vectorize' '-fPIC' '-fstack-protector-strong' '-fno-plt' '-O2' '-ffunction-sections' '-pipe' '-isystem' '/ssd7/jxc/miniconda3/envs/mamba/include' '-v' '-o' 'CMakeFiles/cmTC_88e3d.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-dumpdir' 'CMakeFiles/cmTC_88e3d.dir/CMakeCXXCompilerABI.cpp.']
+  ignore line: [Linking CXX executable cmTC_88e3d]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_88e3d.dir/link.txt --verbose=1]
+  ignore line: [/ssd7/jxc/miniconda3/envs/mamba/bin/x86_64-conda-linux-gnu-c++ -fvisibility-inlines-hidden -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /ssd7/jxc/miniconda3/envs/mamba/include  -Wl -O2 -Wl --sort-common -Wl --as-needed -Wl -z relro -Wl -z now -Wl --disable-new-dtags -Wl --gc-sections -Wl --allow-shlib-undefined -Wl -rpath /ssd7/jxc/miniconda3/envs/mamba/lib -Wl -rpath-link /ssd7/jxc/miniconda3/envs/mamba/lib -L/ssd7/jxc/miniconda3/envs/mamba/lib -v CMakeFiles/cmTC_88e3d.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_88e3d ]
+  ignore line: [Reading specs from /ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/specs]
+  ignore line: [could not find specs file conda.specs]
+  ignore line: [COLLECT_GCC=/ssd7/jxc/miniconda3/envs/mamba/bin/x86_64-conda-linux-gnu-c++]
+  ignore line: [COLLECT_LTO_WRAPPER=/ssd7/jxc/miniconda3/envs/mamba/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.2.0/lto-wrapper]
+  ignore line: [Target: x86_64-conda-linux-gnu]
+  ignore line: [Configured with: ../configure --prefix=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1650668893531/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho --with-slibdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1650668893531/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --libdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1650668893531/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --mandir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1650668893531/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/man --build=x86_64-conda-linux-gnu --host=x86_64-conda-linux-gnu --target=x86_64-conda-linux-gnu --enable-default-pie --enable-languages=c c++ fortran objc obj-c++ --enable-__cxa_atexit --disable-libmudflap --enable-libgomp --disable-libssp --enable-libquadmath --enable-libquadmath-support --enable-libsanitizer --enable-lto --enable-threads=posix --enable-target-optspace --enable-plugin --enable-gold --disable-nls --disable-bootstrap --disable-multilib --enable-long-long --with-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1650668893531/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/x86_64-conda-linux-gnu/sysroot --with-build-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1650668893531/_build_env/x86_64-conda-linux-gnu/sysroot --with-gxx-include-dir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1650668893531/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/x86_64-conda-linux-gnu/include/c++/11.2.0 --with-pkgversion='conda-forge gcc 11.2.0-16' --with-bugurl=https://github.com/conda-forge/ctng-compilers-feedstock/issues/new/choose]
+  ignore line: [Thread model: posix]
+  ignore line: [Supported LTO compression algorithms: zlib]
+  ignore line: [gcc version 11.2.0 (conda-forge gcc 11.2.0-16) ]
+  ignore line: [COMPILER_PATH=/ssd7/jxc/miniconda3/envs/mamba/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.2.0/:/ssd7/jxc/miniconda3/envs/mamba/bin/../libexec/gcc/:/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/bin/]
+  ignore line: [LIBRARY_PATH=/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/:/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/:/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/lib/../lib/:/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../lib/:/ssd7/jxc/miniconda3/envs/mamba/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib/:/ssd7/jxc/miniconda3/envs/mamba/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/:/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/lib/:/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../:/ssd7/jxc/miniconda3/envs/mamba/bin/../x86_64-conda-linux-gnu/sysroot/lib/:/ssd7/jxc/miniconda3/envs/mamba/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-fvisibility-inlines-hidden' '-fmessage-length=0' '-march=nocona' '-mtune=haswell' '-ftree-vectorize' '-fPIC' '-fstack-protector-strong' '-fno-plt' '-O2' '-ffunction-sections' '-pipe' '-isystem' '/ssd7/jxc/miniconda3/envs/mamba/include' '-L/ssd7/jxc/miniconda3/envs/mamba/lib' '-v' '-o' 'cmTC_88e3d' '-shared-libgcc' '-dumpdir' 'cmTC_88e3d.']
+  link line: [ /ssd7/jxc/miniconda3/envs/mamba/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.2.0/collect2 -plugin /ssd7/jxc/miniconda3/envs/mamba/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.2.0/liblto_plugin.so -plugin-opt=/ssd7/jxc/miniconda3/envs/mamba/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccKLDYKS.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/ssd7/jxc/miniconda3/envs/mamba/bin/../x86_64-conda-linux-gnu/sysroot --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_88e3d /ssd7/jxc/miniconda3/envs/mamba/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/Scrt1.o /ssd7/jxc/miniconda3/envs/mamba/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crti.o /ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/crtbeginS.o -L/ssd7/jxc/miniconda3/envs/mamba/lib -L/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0 -L/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc -L/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/lib/../lib -L/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../lib -L/ssd7/jxc/miniconda3/envs/mamba/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib -L/ssd7/jxc/miniconda3/envs/mamba/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib -L/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/lib -L/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../.. -L/ssd7/jxc/miniconda3/envs/mamba/bin/../x86_64-conda-linux-gnu/sysroot/lib -L/ssd7/jxc/miniconda3/envs/mamba/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib -O2 --sort-common --as-needed -z relro -z now --disable-new-dtags --gc-sections --allow-shlib-undefined -rpath /ssd7/jxc/miniconda3/envs/mamba/lib -rpath-link /ssd7/jxc/miniconda3/envs/mamba/lib CMakeFiles/cmTC_88e3d.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/crtendS.o /ssd7/jxc/miniconda3/envs/mamba/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crtn.o -rpath /ssd7/jxc/miniconda3/envs/mamba/lib]
+    arg [/ssd7/jxc/miniconda3/envs/mamba/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.2.0/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/ssd7/jxc/miniconda3/envs/mamba/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.2.0/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/ssd7/jxc/miniconda3/envs/mamba/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.2.0/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccKLDYKS.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [--sysroot=/ssd7/jxc/miniconda3/envs/mamba/bin/../x86_64-conda-linux-gnu/sysroot] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-pie] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_88e3d] ==> ignore
+    arg [/ssd7/jxc/miniconda3/envs/mamba/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/Scrt1.o] ==> obj [/ssd7/jxc/miniconda3/envs/mamba/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/Scrt1.o]
+    arg [/ssd7/jxc/miniconda3/envs/mamba/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crti.o] ==> obj [/ssd7/jxc/miniconda3/envs/mamba/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crti.o]
+    arg [/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/crtbeginS.o] ==> obj [/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/crtbeginS.o]
+    arg [-L/ssd7/jxc/miniconda3/envs/mamba/lib] ==> dir [/ssd7/jxc/miniconda3/envs/mamba/lib]
+    arg [-L/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0] ==> dir [/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0]
+    arg [-L/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc] ==> dir [/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc]
+    arg [-L/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/lib/../lib] ==> dir [/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/lib/../lib]
+    arg [-L/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../lib] ==> dir [/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../lib]
+    arg [-L/ssd7/jxc/miniconda3/envs/mamba/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib] ==> dir [/ssd7/jxc/miniconda3/envs/mamba/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib]
+    arg [-L/ssd7/jxc/miniconda3/envs/mamba/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib] ==> dir [/ssd7/jxc/miniconda3/envs/mamba/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib]
+    arg [-L/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/lib] ==> dir [/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/lib]
+    arg [-L/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../..] ==> dir [/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../..]
+    arg [-L/ssd7/jxc/miniconda3/envs/mamba/bin/../x86_64-conda-linux-gnu/sysroot/lib] ==> dir [/ssd7/jxc/miniconda3/envs/mamba/bin/../x86_64-conda-linux-gnu/sysroot/lib]
+    arg [-L/ssd7/jxc/miniconda3/envs/mamba/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib] ==> dir [/ssd7/jxc/miniconda3/envs/mamba/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib]
+    arg [-O2] ==> ignore
+    arg [--sort-common] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-zrelro] ==> ignore
+    arg [-znow] ==> ignore
+    arg [--disable-new-dtags] ==> ignore
+    arg [--gc-sections] ==> ignore
+    arg [--allow-shlib-undefined] ==> ignore
+    arg [-rpath] ==> ignore
+    arg [/ssd7/jxc/miniconda3/envs/mamba/lib] ==> ignore
+    arg [-rpath-link] ==> ignore
+    arg [/ssd7/jxc/miniconda3/envs/mamba/lib] ==> ignore
+    arg [CMakeFiles/cmTC_88e3d.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [-lstdc++] ==> lib [stdc++]
+    arg [-lm] ==> lib [m]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lc] ==> lib [c]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/crtendS.o] ==> obj [/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/crtendS.o]
+    arg [/ssd7/jxc/miniconda3/envs/mamba/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crtn.o] ==> obj [/ssd7/jxc/miniconda3/envs/mamba/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crtn.o]
+    arg [-rpath] ==> ignore
+    arg [/ssd7/jxc/miniconda3/envs/mamba/lib] ==> ignore
+  collapse obj [/ssd7/jxc/miniconda3/envs/mamba/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/Scrt1.o] ==> [/ssd7/jxc/miniconda3/envs/mamba/x86_64-conda-linux-gnu/sysroot/usr/lib/Scrt1.o]
+  collapse obj [/ssd7/jxc/miniconda3/envs/mamba/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crti.o] ==> [/ssd7/jxc/miniconda3/envs/mamba/x86_64-conda-linux-gnu/sysroot/usr/lib/crti.o]
+  collapse obj [/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/crtbeginS.o] ==> [/ssd7/jxc/miniconda3/envs/mamba/lib/gcc/x86_64-conda-linux-gnu/11.2.0/crtbeginS.o]
+  collapse obj [/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/crtendS.o] ==> [/ssd7/jxc/miniconda3/envs/mamba/lib/gcc/x86_64-conda-linux-gnu/11.2.0/crtendS.o]
+  collapse obj [/ssd7/jxc/miniconda3/envs/mamba/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crtn.o] ==> [/ssd7/jxc/miniconda3/envs/mamba/x86_64-conda-linux-gnu/sysroot/usr/lib/crtn.o]
+  collapse library dir [/ssd7/jxc/miniconda3/envs/mamba/lib] ==> [/ssd7/jxc/miniconda3/envs/mamba/lib]
+  collapse library dir [/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0] ==> [/ssd7/jxc/miniconda3/envs/mamba/lib/gcc/x86_64-conda-linux-gnu/11.2.0]
+  collapse library dir [/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc] ==> [/ssd7/jxc/miniconda3/envs/mamba/lib/gcc]
+  collapse library dir [/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/lib/../lib] ==> [/ssd7/jxc/miniconda3/envs/mamba/x86_64-conda-linux-gnu/lib]
+  collapse library dir [/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../lib] ==> [/ssd7/jxc/miniconda3/envs/mamba/lib]
+  collapse library dir [/ssd7/jxc/miniconda3/envs/mamba/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib] ==> [/ssd7/jxc/miniconda3/envs/mamba/x86_64-conda-linux-gnu/sysroot/lib]
+  collapse library dir [/ssd7/jxc/miniconda3/envs/mamba/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib] ==> [/ssd7/jxc/miniconda3/envs/mamba/x86_64-conda-linux-gnu/sysroot/usr/lib]
+  collapse library dir [/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/lib] ==> [/ssd7/jxc/miniconda3/envs/mamba/x86_64-conda-linux-gnu/lib]
+  collapse library dir [/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../..] ==> [/ssd7/jxc/miniconda3/envs/mamba/lib]
+  collapse library dir [/ssd7/jxc/miniconda3/envs/mamba/bin/../x86_64-conda-linux-gnu/sysroot/lib] ==> [/ssd7/jxc/miniconda3/envs/mamba/x86_64-conda-linux-gnu/sysroot/lib]
+  collapse library dir [/ssd7/jxc/miniconda3/envs/mamba/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib] ==> [/ssd7/jxc/miniconda3/envs/mamba/x86_64-conda-linux-gnu/sysroot/usr/lib]
+  implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+  implicit objs: [/ssd7/jxc/miniconda3/envs/mamba/x86_64-conda-linux-gnu/sysroot/usr/lib/Scrt1.o;/ssd7/jxc/miniconda3/envs/mamba/x86_64-conda-linux-gnu/sysroot/usr/lib/crti.o;/ssd7/jxc/miniconda3/envs/mamba/lib/gcc/x86_64-conda-linux-gnu/11.2.0/crtbeginS.o;/ssd7/jxc/miniconda3/envs/mamba/lib/gcc/x86_64-conda-linux-gnu/11.2.0/crtendS.o;/ssd7/jxc/miniconda3/envs/mamba/x86_64-conda-linux-gnu/sysroot/usr/lib/crtn.o]
+  implicit dirs: [/ssd7/jxc/miniconda3/envs/mamba/lib;/ssd7/jxc/miniconda3/envs/mamba/lib/gcc/x86_64-conda-linux-gnu/11.2.0;/ssd7/jxc/miniconda3/envs/mamba/lib/gcc;/ssd7/jxc/miniconda3/envs/mamba/x86_64-conda-linux-gnu/lib;/ssd7/jxc/miniconda3/envs/mamba/x86_64-conda-linux-gnu/sysroot/lib;/ssd7/jxc/miniconda3/envs/mamba/x86_64-conda-linux-gnu/sysroot/usr/lib]
+  implicit fwks: []
+
+
+Detecting CUDA compiler ABI info compiled with the following output:
+Change Dir: /ssd10/jxc/smallpt/cu-smallpt-abla/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_e02c5/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_e02c5.dir/build.make CMakeFiles/cmTC_e02c5.dir/build
+gmake[1]: Entering directory '/ssd10/jxc/smallpt/cu-smallpt-abla/build/CMakeFiles/CMakeTmp'
+Building CUDA object CMakeFiles/cmTC_e02c5.dir/CMakeCUDACompilerABI.cu.o
+/usr/local/cuda-12.1/bin/nvcc -forward-unknown-to-host-compiler   -Xcompiler=-v -MD -MT CMakeFiles/cmTC_e02c5.dir/CMakeCUDACompilerABI.cu.o -MF CMakeFiles/cmTC_e02c5.dir/CMakeCUDACompilerABI.cu.o.d -x cu -c /usr/share/cmake-3.22/Modules/CMakeCUDACompilerABI.cu -o CMakeFiles/cmTC_e02c5.dir/CMakeCUDACompilerABI.cu.o
+Reading specs from /ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/specs
+could not find specs file conda.specs
+COLLECT_GCC=gcc
+Target: x86_64-conda-linux-gnu
+Configured with: ../configure --prefix=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1650668893531/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho --with-slibdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1650668893531/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --libdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1650668893531/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --mandir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1650668893531/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/man --build=x86_64-conda-linux-gnu --host=x86_64-conda-linux-gnu --target=x86_64-conda-linux-gnu --enable-default-pie --enable-languages=c,c++,fortran,objc,obj-c++ --enable-__cxa_atexit --disable-libmudflap --enable-libgomp --disable-libssp --enable-libquadmath --enable-libquadmath-support --enable-libsanitizer --enable-lto --enable-threads=posix --enable-target-optspace --enable-plugin --enable-gold --disable-nls --disable-bootstrap --disable-multilib --enable-long-long --with-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1650668893531/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/x86_64-conda-linux-gnu/sysroot --with-build-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1650668893531/_build_env/x86_64-conda-linux-gnu/sysroot --with-gxx-include-dir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1650668893531/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/x86_64-conda-linux-gnu/include/c++/11.2.0 --with-pkgversion='conda-forge gcc 11.2.0-16' --with-bugurl=https://github.com/conda-forge/ctng-compilers-feedstock/issues/new/choose
+Thread model: posix
+Supported LTO compression algorithms: zlib
+gcc version 11.2.0 (conda-forge gcc 11.2.0-16) 
+COLLECT_GCC_OPTIONS='-D' '__CUDA_ARCH__=520' '-D' '__CUDA_ARCH_LIST__=520' '-E' '-D' 'CUDA_DOUBLE_MATH_FUNCTIONS' '-D' '__CUDACC__' '-D' '__NVCC__' '-v' '-I' '/usr/local/cuda-12.1/bin/../targets/x86_64-linux/include' '-D' '__CUDACC_VER_MAJOR__=12' '-D' '__CUDACC_VER_MINOR__=1' '-D' '__CUDACC_VER_BUILD__=66' '-D' '__CUDA_API_VER_MAJOR__=12' '-D' '__CUDA_API_VER_MINOR__=1' '-D' '__NVCC_DIAG_PRAGMA_SUPPORT__=1' '-include' 'cuda_runtime.h' '-m64' '-o' '/tmp/tmpxft_003e7c18_00000000-7_CMakeCUDACompilerABI.cpp1.ii' '-mtune=generic' '-march=x86-64' '-dumpdir' '/tmp/'
+ /ssd7/jxc/miniconda3/envs/mamba/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.2.0/cc1plus -E -quiet -v -I /usr/local/cuda-12.1/bin/../targets/x86_64-linux/include -iprefix /ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/ -isysroot /ssd7/jxc/miniconda3/envs/mamba/bin/../x86_64-conda-linux-gnu/sysroot -D_GNU_SOURCE -D __CUDA_ARCH__=520 -D __CUDA_ARCH_LIST__=520 -D CUDA_DOUBLE_MATH_FUNCTIONS -D __CUDACC__ -D __NVCC__ -D __CUDACC_VER_MAJOR__=12 -D __CUDACC_VER_MINOR__=1 -D __CUDACC_VER_BUILD__=66 -D __CUDA_API_VER_MAJOR__=12 -D __CUDA_API_VER_MINOR__=1 -D __NVCC_DIAG_PRAGMA_SUPPORT__=1 -include cuda_runtime.h /usr/share/cmake-3.22/Modules/CMakeCUDACompilerABI.cu -o /tmp/tmpxft_003e7c18_00000000-7_CMakeCUDACompilerABI.cpp1.ii -m64 -mtune=generic -march=x86-64 -dumpdir /tmp/ -dumpbase tmpxft_003e7c18_00000000-7_CMakeCUDACompilerABI.cpp1.cu -dumpbase-ext .cu
+ignoring duplicate directory "/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/11.2.0/include"
+ignoring nonexistent directory "/ssd7/jxc/miniconda3/envs/mamba/bin/../x86_64-conda-linux-gnu/sysroot/usr/local/include"
+ignoring duplicate directory "/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/11.2.0/include-fixed"
+ignoring duplicate directory "/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/local/cuda-12.1/bin/../targets/x86_64-linux/include
+ /ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/include
+ /ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/include-fixed
+ /ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/include
+ /ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/../../x86_64-conda-linux-gnu/include/c++/11.2.0
+ /ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/../../x86_64-conda-linux-gnu/include/c++/11.2.0/x86_64-conda-linux-gnu
+ /ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/../../x86_64-conda-linux-gnu/include/c++/11.2.0/backward
+ /ssd7/jxc/miniconda3/envs/mamba/bin/../x86_64-conda-linux-gnu/sysroot/usr/include
+End of search list.
+COMPILER_PATH=/ssd7/jxc/miniconda3/envs/mamba/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.2.0/:/ssd7/jxc/miniconda3/envs/mamba/bin/../libexec/gcc/:/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/bin/
+LIBRARY_PATH=/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/:/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/:/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/lib/../lib/:/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../lib/:/ssd7/jxc/miniconda3/envs/mamba/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib/:/ssd7/jxc/miniconda3/envs/mamba/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/:/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/lib/:/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../:/ssd7/jxc/miniconda3/envs/mamba/bin/../x86_64-conda-linux-gnu/sysroot/lib/:/ssd7/jxc/miniconda3/envs/mamba/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/
+COLLECT_GCC_OPTIONS='-D' '__CUDA_ARCH__=520' '-D' '__CUDA_ARCH_LIST__=520' '-E' '-D' 'CUDA_DOUBLE_MATH_FUNCTIONS' '-D' '__CUDACC__' '-D' '__NVCC__' '-v' '-I' '/usr/local/cuda-12.1/bin/../targets/x86_64-linux/include' '-D' '__CUDACC_VER_MAJOR__=12' '-D' '__CUDACC_VER_MINOR__=1' '-D' '__CUDACC_VER_BUILD__=66' '-D' '__CUDA_API_VER_MAJOR__=12' '-D' '__CUDA_API_VER_MINOR__=1' '-D' '__NVCC_DIAG_PRAGMA_SUPPORT__=1' '-include' 'cuda_runtime.h' '-m64' '-o' '/tmp/tmpxft_003e7c18_00000000-7_CMakeCUDACompilerABI.cpp1.ii' '-mtune=generic' '-march=x86-64' '-dumpdir' '/tmp/tmpxft_003e7c18_00000000-7_CMakeCUDACompilerABI.cpp1.'
+Reading specs from /ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/specs
+could not find specs file conda.specs
+COLLECT_GCC=gcc
+Target: x86_64-conda-linux-gnu
+Configured with: ../configure --prefix=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1650668893531/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho --with-slibdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1650668893531/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --libdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1650668893531/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --mandir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1650668893531/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/man --build=x86_64-conda-linux-gnu --host=x86_64-conda-linux-gnu --target=x86_64-conda-linux-gnu --enable-default-pie --enable-languages=c,c++,fortran,objc,obj-c++ --enable-__cxa_atexit --disable-libmudflap --enable-libgomp --disable-libssp --enable-libquadmath --enable-libquadmath-support --enable-libsanitizer --enable-lto --enable-threads=posix --enable-target-optspace --enable-plugin --enable-gold --disable-nls --disable-bootstrap --disable-multilib --enable-long-long --with-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1650668893531/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/x86_64-conda-linux-gnu/sysroot --with-build-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1650668893531/_build_env/x86_64-conda-linux-gnu/sysroot --with-gxx-include-dir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1650668893531/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/x86_64-conda-linux-gnu/include/c++/11.2.0 --with-pkgversion='conda-forge gcc 11.2.0-16' --with-bugurl=https://github.com/conda-forge/ctng-compilers-feedstock/issues/new/choose
+Thread model: posix
+Supported LTO compression algorithms: zlib
+gcc version 11.2.0 (conda-forge gcc 11.2.0-16) 
+COLLECT_GCC_OPTIONS='-D' '__CUDA_ARCH_LIST__=520' '-E' '-D' '__CUDACC__' '-D' '__NVCC__' '-v' '-I' '/usr/local/cuda-12.1/bin/../targets/x86_64-linux/include' '-D' '__CUDACC_VER_MAJOR__=12' '-D' '__CUDACC_VER_MINOR__=1' '-D' '__CUDACC_VER_BUILD__=66' '-D' '__CUDA_API_VER_MAJOR__=12' '-D' '__CUDA_API_VER_MINOR__=1' '-D' '__NVCC_DIAG_PRAGMA_SUPPORT__=1' '-include' 'cuda_runtime.h' '-m64' '-o' '/tmp/tmpxft_003e7c18_00000000-5_CMakeCUDACompilerABI.cpp4.ii' '-mtune=generic' '-march=x86-64' '-dumpdir' '/tmp/'
+ /ssd7/jxc/miniconda3/envs/mamba/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.2.0/cc1plus -E -quiet -v -I /usr/local/cuda-12.1/bin/../targets/x86_64-linux/include -iprefix /ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/ -isysroot /ssd7/jxc/miniconda3/envs/mamba/bin/../x86_64-conda-linux-gnu/sysroot -D_GNU_SOURCE -D __CUDA_ARCH_LIST__=520 -D __CUDACC__ -D __NVCC__ -D __CUDACC_VER_MAJOR__=12 -D __CUDACC_VER_MINOR__=1 -D __CUDACC_VER_BUILD__=66 -D __CUDA_API_VER_MAJOR__=12 -D __CUDA_API_VER_MINOR__=1 -D __NVCC_DIAG_PRAGMA_SUPPORT__=1 -include cuda_runtime.h /usr/share/cmake-3.22/Modules/CMakeCUDACompilerABI.cu -o /tmp/tmpxft_003e7c18_00000000-5_CMakeCUDACompilerABI.cpp4.ii -m64 -mtune=generic -march=x86-64 -dumpdir /tmp/ -dumpbase tmpxft_003e7c18_00000000-5_CMakeCUDACompilerABI.cpp4.cu -dumpbase-ext .cu
+ignoring duplicate directory "/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/11.2.0/include"
+ignoring nonexistent directory "/ssd7/jxc/miniconda3/envs/mamba/bin/../x86_64-conda-linux-gnu/sysroot/usr/local/include"
+ignoring duplicate directory "/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/11.2.0/include-fixed"
+ignoring duplicate directory "/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/local/cuda-12.1/bin/../targets/x86_64-linux/include
+ /ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/include
+ /ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/include-fixed
+ /ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/include
+ /ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/../../x86_64-conda-linux-gnu/include/c++/11.2.0
+ /ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/../../x86_64-conda-linux-gnu/include/c++/11.2.0/x86_64-conda-linux-gnu
+ /ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/../../x86_64-conda-linux-gnu/include/c++/11.2.0/backward
+ /ssd7/jxc/miniconda3/envs/mamba/bin/../x86_64-conda-linux-gnu/sysroot/usr/include
+End of search list.
+COMPILER_PATH=/ssd7/jxc/miniconda3/envs/mamba/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.2.0/:/ssd7/jxc/miniconda3/envs/mamba/bin/../libexec/gcc/:/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/bin/
+LIBRARY_PATH=/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/:/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/:/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/lib/../lib/:/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../lib/:/ssd7/jxc/miniconda3/envs/mamba/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib/:/ssd7/jxc/miniconda3/envs/mamba/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/:/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/lib/:/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../:/ssd7/jxc/miniconda3/envs/mamba/bin/../x86_64-conda-linux-gnu/sysroot/lib/:/ssd7/jxc/miniconda3/envs/mamba/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/
+COLLECT_GCC_OPTIONS='-D' '__CUDA_ARCH_LIST__=520' '-E' '-D' '__CUDACC__' '-D' '__NVCC__' '-v' '-I' '/usr/local/cuda-12.1/bin/../targets/x86_64-linux/include' '-D' '__CUDACC_VER_MAJOR__=12' '-D' '__CUDACC_VER_MINOR__=1' '-D' '__CUDACC_VER_BUILD__=66' '-D' '__CUDA_API_VER_MAJOR__=12' '-D' '__CUDA_API_VER_MINOR__=1' '-D' '__NVCC_DIAG_PRAGMA_SUPPORT__=1' '-include' 'cuda_runtime.h' '-m64' '-o' '/tmp/tmpxft_003e7c18_00000000-5_CMakeCUDACompilerABI.cpp4.ii' '-mtune=generic' '-march=x86-64' '-dumpdir' '/tmp/tmpxft_003e7c18_00000000-5_CMakeCUDACompilerABI.cpp4.'
+Reading specs from /ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/specs
+could not find specs file conda.specs
+COLLECT_GCC=gcc
+Target: x86_64-conda-linux-gnu
+Configured with: ../configure --prefix=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1650668893531/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho --with-slibdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1650668893531/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --libdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1650668893531/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --mandir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1650668893531/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/man --build=x86_64-conda-linux-gnu --host=x86_64-conda-linux-gnu --target=x86_64-conda-linux-gnu --enable-default-pie --enable-languages=c,c++,fortran,objc,obj-c++ --enable-__cxa_atexit --disable-libmudflap --enable-libgomp --disable-libssp --enable-libquadmath --enable-libquadmath-support --enable-libsanitizer --enable-lto --enable-threads=posix --enable-target-optspace --enable-plugin --enable-gold --disable-nls --disable-bootstrap --disable-multilib --enable-long-long --with-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1650668893531/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/x86_64-conda-linux-gnu/sysroot --with-build-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1650668893531/_build_env/x86_64-conda-linux-gnu/sysroot --with-gxx-include-dir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1650668893531/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/x86_64-conda-linux-gnu/include/c++/11.2.0 --with-pkgversion='conda-forge gcc 11.2.0-16' --with-bugurl=https://github.com/conda-forge/ctng-compilers-feedstock/issues/new/choose
+Thread model: posix
+Supported LTO compression algorithms: zlib
+gcc version 11.2.0 (conda-forge gcc 11.2.0-16) 
+COLLECT_GCC_OPTIONS='-D' '__CUDA_ARCH__=520' '-D' '__CUDA_ARCH_LIST__=520' '-c' '-D' 'CUDA_DOUBLE_MATH_FUNCTIONS' '-v' '-I' '/usr/local/cuda-12.1/bin/../targets/x86_64-linux/include' '-m64' '-o' 'CMakeFiles/cmTC_e02c5.dir/CMakeCUDACompilerABI.cu.o' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_e02c5.dir/'
+ /ssd7/jxc/miniconda3/envs/mamba/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.2.0/cc1plus -quiet -v -I /usr/local/cuda-12.1/bin/../targets/x86_64-linux/include -iprefix /ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/ -isysroot /ssd7/jxc/miniconda3/envs/mamba/bin/../x86_64-conda-linux-gnu/sysroot -D_GNU_SOURCE -D __CUDA_ARCH__=520 -D __CUDA_ARCH_LIST__=520 -D CUDA_DOUBLE_MATH_FUNCTIONS /tmp/tmpxft_003e7c18_00000000-6_CMakeCUDACompilerABI.cudafe1.cpp -quiet -dumpdir CMakeFiles/cmTC_e02c5.dir/ -dumpbase CMakeCUDACompilerABI.cu.cpp -dumpbase-ext .cpp -m64 -mtune=generic -march=x86-64 -version -o /tmp/ccHukhOi.s
+GNU C++17 (conda-forge gcc 11.2.0-16) version 11.2.0 (x86_64-conda-linux-gnu)
+	compiled by GNU C version 11.2.0, GMP version 6.1.0, MPFR version 3.1.6, MPC version 1.0.3, isl version isl-0.18-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring duplicate directory "/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/11.2.0/include"
+ignoring nonexistent directory "/ssd7/jxc/miniconda3/envs/mamba/bin/../x86_64-conda-linux-gnu/sysroot/usr/local/include"
+ignoring duplicate directory "/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/11.2.0/include-fixed"
+ignoring duplicate directory "/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/local/cuda-12.1/bin/../targets/x86_64-linux/include
+ /ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/include
+ /ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/include-fixed
+ /ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/include
+ /ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/../../x86_64-conda-linux-gnu/include/c++/11.2.0
+ /ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/../../x86_64-conda-linux-gnu/include/c++/11.2.0/x86_64-conda-linux-gnu
+ /ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/../../x86_64-conda-linux-gnu/include/c++/11.2.0/backward
+ /ssd7/jxc/miniconda3/envs/mamba/bin/../x86_64-conda-linux-gnu/sysroot/usr/include
+End of search list.
+GNU C++17 (conda-forge gcc 11.2.0-16) version 11.2.0 (x86_64-conda-linux-gnu)
+	compiled by GNU C version 11.2.0, GMP version 6.1.0, MPFR version 3.1.6, MPC version 1.0.3, isl version isl-0.18-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: b5a2d72bed81fc692f33193d6bddc0d0
+COLLECT_GCC_OPTIONS='-D' '__CUDA_ARCH__=520' '-D' '__CUDA_ARCH_LIST__=520' '-c' '-D' 'CUDA_DOUBLE_MATH_FUNCTIONS' '-v' '-I' '/usr/local/cuda-12.1/bin/../targets/x86_64-linux/include' '-m64' '-o' 'CMakeFiles/cmTC_e02c5.dir/CMakeCUDACompilerABI.cu.o' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_e02c5.dir/'
+ /ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/bin/as -v -I /usr/local/cuda-12.1/bin/../targets/x86_64-linux/include --64 -o CMakeFiles/cmTC_e02c5.dir/CMakeCUDACompilerABI.cu.o /tmp/ccHukhOi.s
+GNU assembler version 2.36.1 (x86_64-conda-linux-gnu) using BFD version (GNU Binutils) 2.36.1
+COMPILER_PATH=/ssd7/jxc/miniconda3/envs/mamba/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.2.0/:/ssd7/jxc/miniconda3/envs/mamba/bin/../libexec/gcc/:/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/bin/
+LIBRARY_PATH=/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/:/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/:/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/lib/../lib/:/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../lib/:/ssd7/jxc/miniconda3/envs/mamba/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib/:/ssd7/jxc/miniconda3/envs/mamba/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/:/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/lib/:/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../:/ssd7/jxc/miniconda3/envs/mamba/bin/../x86_64-conda-linux-gnu/sysroot/lib/:/ssd7/jxc/miniconda3/envs/mamba/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/
+COLLECT_GCC_OPTIONS='-D' '__CUDA_ARCH__=520' '-D' '__CUDA_ARCH_LIST__=520' '-c' '-D' 'CUDA_DOUBLE_MATH_FUNCTIONS' '-v' '-I' '/usr/local/cuda-12.1/bin/../targets/x86_64-linux/include' '-m64' '-o' 'CMakeFiles/cmTC_e02c5.dir/CMakeCUDACompilerABI.cu.o' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_e02c5.dir/CMakeCUDACompilerABI.cu.'
+Linking CUDA executable cmTC_e02c5
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e02c5.dir/link.txt --verbose=1
+/ssd7/jxc/miniconda3/envs/mamba/bin/g++ -Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,--allow-shlib-undefined -Wl,-rpath,/ssd7/jxc/miniconda3/envs/mamba/lib -Wl,-rpath-link,/ssd7/jxc/miniconda3/envs/mamba/lib -L/ssd7/jxc/miniconda3/envs/mamba/lib -v CMakeFiles/cmTC_e02c5.dir/CMakeCUDACompilerABI.cu.o -o cmTC_e02c5  -lcudadevrt -lcudart_static -lrt -lpthread -ldl  -L"/usr/local/cuda-12.1/targets/x86_64-linux/lib/stubs" -L"/usr/local/cuda-12.1/targets/x86_64-linux/lib"
+Reading specs from /ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/specs
+could not find specs file conda.specs
+COLLECT_GCC=/ssd7/jxc/miniconda3/envs/mamba/bin/g++
+COLLECT_LTO_WRAPPER=/ssd7/jxc/miniconda3/envs/mamba/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.2.0/lto-wrapper
+Target: x86_64-conda-linux-gnu
+Configured with: ../configure --prefix=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1650668893531/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho --with-slibdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1650668893531/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --libdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1650668893531/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --mandir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1650668893531/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/man --build=x86_64-conda-linux-gnu --host=x86_64-conda-linux-gnu --target=x86_64-conda-linux-gnu --enable-default-pie --enable-languages=c,c++,fortran,objc,obj-c++ --enable-__cxa_atexit --disable-libmudflap --enable-libgomp --disable-libssp --enable-libquadmath --enable-libquadmath-support --enable-libsanitizer --enable-lto --enable-threads=posix --enable-target-optspace --enable-plugin --enable-gold --disable-nls --disable-bootstrap --disable-multilib --enable-long-long --with-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1650668893531/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/x86_64-conda-linux-gnu/sysroot --with-build-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1650668893531/_build_env/x86_64-conda-linux-gnu/sysroot --with-gxx-include-dir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1650668893531/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/x86_64-conda-linux-gnu/include/c++/11.2.0 --with-pkgversion='conda-forge gcc 11.2.0-16' --with-bugurl=https://github.com/conda-forge/ctng-compilers-feedstock/issues/new/choose
+Thread model: posix
+Supported LTO compression algorithms: zlib
+gcc version 11.2.0 (conda-forge gcc 11.2.0-16) 
+COMPILER_PATH=/ssd7/jxc/miniconda3/envs/mamba/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.2.0/:/ssd7/jxc/miniconda3/envs/mamba/bin/../libexec/gcc/:/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/bin/
+LIBRARY_PATH=/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/:/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/:/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/lib/../lib/:/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../lib/:/ssd7/jxc/miniconda3/envs/mamba/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib/:/ssd7/jxc/miniconda3/envs/mamba/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/:/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/lib/:/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../:/ssd7/jxc/miniconda3/envs/mamba/bin/../x86_64-conda-linux-gnu/sysroot/lib/:/ssd7/jxc/miniconda3/envs/mamba/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/
+COLLECT_GCC_OPTIONS='-L/ssd7/jxc/miniconda3/envs/mamba/lib' '-v' '-o' 'cmTC_e02c5' '-L/usr/local/cuda-12.1/targets/x86_64-linux/lib/stubs' '-L/usr/local/cuda-12.1/targets/x86_64-linux/lib' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_e02c5.'
+ /ssd7/jxc/miniconda3/envs/mamba/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.2.0/collect2 -plugin /ssd7/jxc/miniconda3/envs/mamba/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.2.0/liblto_plugin.so -plugin-opt=/ssd7/jxc/miniconda3/envs/mamba/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccKe5eWb.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/ssd7/jxc/miniconda3/envs/mamba/bin/../x86_64-conda-linux-gnu/sysroot --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_e02c5 /ssd7/jxc/miniconda3/envs/mamba/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/Scrt1.o /ssd7/jxc/miniconda3/envs/mamba/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crti.o /ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/crtbeginS.o -L/ssd7/jxc/miniconda3/envs/mamba/lib -L/usr/local/cuda-12.1/targets/x86_64-linux/lib/stubs -L/usr/local/cuda-12.1/targets/x86_64-linux/lib -L/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0 -L/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc -L/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/lib/../lib -L/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../lib -L/ssd7/jxc/miniconda3/envs/mamba/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib -L/ssd7/jxc/miniconda3/envs/mamba/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib -L/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/lib -L/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../.. -L/ssd7/jxc/miniconda3/envs/mamba/bin/../x86_64-conda-linux-gnu/sysroot/lib -L/ssd7/jxc/miniconda3/envs/mamba/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib -O2 --sort-common --as-needed -z relro -z now --disable-new-dtags --gc-sections --allow-shlib-undefined -rpath /ssd7/jxc/miniconda3/envs/mamba/lib -rpath-link /ssd7/jxc/miniconda3/envs/mamba/lib CMakeFiles/cmTC_e02c5.dir/CMakeCUDACompilerABI.cu.o -lcudadevrt -lcudart_static -lrt -lpthread -ldl -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/crtendS.o /ssd7/jxc/miniconda3/envs/mamba/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crtn.o -rpath /ssd7/jxc/miniconda3/envs/mamba/lib
+COLLECT_GCC_OPTIONS='-L/ssd7/jxc/miniconda3/envs/mamba/lib' '-v' '-o' 'cmTC_e02c5' '-L/usr/local/cuda-12.1/targets/x86_64-linux/lib/stubs' '-L/usr/local/cuda-12.1/targets/x86_64-linux/lib' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_e02c5.'
+gmake[1]: Leaving directory '/ssd10/jxc/smallpt/cu-smallpt-abla/build/CMakeFiles/CMakeTmp'
+
+
+
+Parsed CUDA implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/usr/local/cuda-12.1/bin/../targets/x86_64-linux/include]
+    add: [/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/include]
+    add: [/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/include-fixed]
+    add: [/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/include]
+    add: [/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/../../x86_64-conda-linux-gnu/include/c++/11.2.0]
+    add: [/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/../../x86_64-conda-linux-gnu/include/c++/11.2.0/x86_64-conda-linux-gnu]
+    add: [/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/../../x86_64-conda-linux-gnu/include/c++/11.2.0/backward]
+    add: [/ssd7/jxc/miniconda3/envs/mamba/bin/../x86_64-conda-linux-gnu/sysroot/usr/include]
+  end of search list found
+  collapse include dir [/usr/local/cuda-12.1/bin/../targets/x86_64-linux/include] ==> [/usr/local/cuda-12.1/targets/x86_64-linux/include]
+  collapse include dir [/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/include] ==> [/ssd7/jxc/miniconda3/envs/mamba/lib/gcc/x86_64-conda-linux-gnu/11.2.0/include]
+  collapse include dir [/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/include-fixed] ==> [/ssd7/jxc/miniconda3/envs/mamba/lib/gcc/x86_64-conda-linux-gnu/11.2.0/include-fixed]
+  collapse include dir [/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/include] ==> [/ssd7/jxc/miniconda3/envs/mamba/x86_64-conda-linux-gnu/include]
+  collapse include dir [/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/../../x86_64-conda-linux-gnu/include/c++/11.2.0] ==> [/ssd7/jxc/miniconda3/envs/mamba/x86_64-conda-linux-gnu/include/c++/11.2.0]
+  collapse include dir [/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/../../x86_64-conda-linux-gnu/include/c++/11.2.0/x86_64-conda-linux-gnu] ==> [/ssd7/jxc/miniconda3/envs/mamba/x86_64-conda-linux-gnu/include/c++/11.2.0/x86_64-conda-linux-gnu]
+  collapse include dir [/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/../../x86_64-conda-linux-gnu/include/c++/11.2.0/backward] ==> [/ssd7/jxc/miniconda3/envs/mamba/x86_64-conda-linux-gnu/include/c++/11.2.0/backward]
+  collapse include dir [/ssd7/jxc/miniconda3/envs/mamba/bin/../x86_64-conda-linux-gnu/sysroot/usr/include] ==> [/ssd7/jxc/miniconda3/envs/mamba/x86_64-conda-linux-gnu/sysroot/usr/include]
+  implicit include dirs: [/usr/local/cuda-12.1/targets/x86_64-linux/include;/ssd7/jxc/miniconda3/envs/mamba/lib/gcc/x86_64-conda-linux-gnu/11.2.0/include;/ssd7/jxc/miniconda3/envs/mamba/lib/gcc/x86_64-conda-linux-gnu/11.2.0/include-fixed;/ssd7/jxc/miniconda3/envs/mamba/x86_64-conda-linux-gnu/include;/ssd7/jxc/miniconda3/envs/mamba/x86_64-conda-linux-gnu/include/c++/11.2.0;/ssd7/jxc/miniconda3/envs/mamba/x86_64-conda-linux-gnu/include/c++/11.2.0/x86_64-conda-linux-gnu;/ssd7/jxc/miniconda3/envs/mamba/x86_64-conda-linux-gnu/include/c++/11.2.0/backward;/ssd7/jxc/miniconda3/envs/mamba/x86_64-conda-linux-gnu/sysroot/usr/include]
+
+
+Parsed CUDA implicit link information from above output:
+  link line regex: [^( *|.*[/\])(x86_64-conda-linux-gnu-ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /ssd10/jxc/smallpt/cu-smallpt-abla/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_e02c5/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_e02c5.dir/build.make CMakeFiles/cmTC_e02c5.dir/build]
+  ignore line: [gmake[1]: Entering directory '/ssd10/jxc/smallpt/cu-smallpt-abla/build/CMakeFiles/CMakeTmp']
+  ignore line: [Building CUDA object CMakeFiles/cmTC_e02c5.dir/CMakeCUDACompilerABI.cu.o]
+  ignore line: [/usr/local/cuda-12.1/bin/nvcc -forward-unknown-to-host-compiler   -Xcompiler=-v -MD -MT CMakeFiles/cmTC_e02c5.dir/CMakeCUDACompilerABI.cu.o -MF CMakeFiles/cmTC_e02c5.dir/CMakeCUDACompilerABI.cu.o.d -x cu -c /usr/share/cmake-3.22/Modules/CMakeCUDACompilerABI.cu -o CMakeFiles/cmTC_e02c5.dir/CMakeCUDACompilerABI.cu.o]
+  ignore line: [Reading specs from /ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/specs]
+  ignore line: [could not find specs file conda.specs]
+  ignore line: [COLLECT_GCC=gcc]
+  ignore line: [Target: x86_64-conda-linux-gnu]
+  ignore line: [Configured with: ../configure --prefix=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1650668893531/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho --with-slibdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1650668893531/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --libdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1650668893531/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --mandir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1650668893531/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/man --build=x86_64-conda-linux-gnu --host=x86_64-conda-linux-gnu --target=x86_64-conda-linux-gnu --enable-default-pie --enable-languages=c c++ fortran objc obj-c++ --enable-__cxa_atexit --disable-libmudflap --enable-libgomp --disable-libssp --enable-libquadmath --enable-libquadmath-support --enable-libsanitizer --enable-lto --enable-threads=posix --enable-target-optspace --enable-plugin --enable-gold --disable-nls --disable-bootstrap --disable-multilib --enable-long-long --with-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1650668893531/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/x86_64-conda-linux-gnu/sysroot --with-build-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1650668893531/_build_env/x86_64-conda-linux-gnu/sysroot --with-gxx-include-dir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1650668893531/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/x86_64-conda-linux-gnu/include/c++/11.2.0 --with-pkgversion='conda-forge gcc 11.2.0-16' --with-bugurl=https://github.com/conda-forge/ctng-compilers-feedstock/issues/new/choose]
+  ignore line: [Thread model: posix]
+  ignore line: [Supported LTO compression algorithms: zlib]
+  ignore line: [gcc version 11.2.0 (conda-forge gcc 11.2.0-16) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-D' '__CUDA_ARCH__=520' '-D' '__CUDA_ARCH_LIST__=520' '-E' '-D' 'CUDA_DOUBLE_MATH_FUNCTIONS' '-D' '__CUDACC__' '-D' '__NVCC__' '-v' '-I' '/usr/local/cuda-12.1/bin/../targets/x86_64-linux/include' '-D' '__CUDACC_VER_MAJOR__=12' '-D' '__CUDACC_VER_MINOR__=1' '-D' '__CUDACC_VER_BUILD__=66' '-D' '__CUDA_API_VER_MAJOR__=12' '-D' '__CUDA_API_VER_MINOR__=1' '-D' '__NVCC_DIAG_PRAGMA_SUPPORT__=1' '-include' 'cuda_runtime.h' '-m64' '-o' '/tmp/tmpxft_003e7c18_00000000-7_CMakeCUDACompilerABI.cpp1.ii' '-mtune=generic' '-march=x86-64' '-dumpdir' '/tmp/']
+  ignore line: [ /ssd7/jxc/miniconda3/envs/mamba/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.2.0/cc1plus -E -quiet -v -I /usr/local/cuda-12.1/bin/../targets/x86_64-linux/include -iprefix /ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/ -isysroot /ssd7/jxc/miniconda3/envs/mamba/bin/../x86_64-conda-linux-gnu/sysroot -D_GNU_SOURCE -D __CUDA_ARCH__=520 -D __CUDA_ARCH_LIST__=520 -D CUDA_DOUBLE_MATH_FUNCTIONS -D __CUDACC__ -D __NVCC__ -D __CUDACC_VER_MAJOR__=12 -D __CUDACC_VER_MINOR__=1 -D __CUDACC_VER_BUILD__=66 -D __CUDA_API_VER_MAJOR__=12 -D __CUDA_API_VER_MINOR__=1 -D __NVCC_DIAG_PRAGMA_SUPPORT__=1 -include cuda_runtime.h /usr/share/cmake-3.22/Modules/CMakeCUDACompilerABI.cu -o /tmp/tmpxft_003e7c18_00000000-7_CMakeCUDACompilerABI.cpp1.ii -m64 -mtune=generic -march=x86-64 -dumpdir /tmp/ -dumpbase tmpxft_003e7c18_00000000-7_CMakeCUDACompilerABI.cpp1.cu -dumpbase-ext .cu]
+  ignore line: [ignoring duplicate directory "/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/11.2.0/include"]
+  ignore line: [ignoring nonexistent directory "/ssd7/jxc/miniconda3/envs/mamba/bin/../x86_64-conda-linux-gnu/sysroot/usr/local/include"]
+  ignore line: [ignoring duplicate directory "/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/11.2.0/include-fixed"]
+  ignore line: [ignoring duplicate directory "/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /usr/local/cuda-12.1/bin/../targets/x86_64-linux/include]
+  ignore line: [ /ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/include]
+  ignore line: [ /ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/include-fixed]
+  ignore line: [ /ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/include]
+  ignore line: [ /ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/../../x86_64-conda-linux-gnu/include/c++/11.2.0]
+  ignore line: [ /ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/../../x86_64-conda-linux-gnu/include/c++/11.2.0/x86_64-conda-linux-gnu]
+  ignore line: [ /ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/../../x86_64-conda-linux-gnu/include/c++/11.2.0/backward]
+  ignore line: [ /ssd7/jxc/miniconda3/envs/mamba/bin/../x86_64-conda-linux-gnu/sysroot/usr/include]
+  ignore line: [End of search list.]
+  ignore line: [COMPILER_PATH=/ssd7/jxc/miniconda3/envs/mamba/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.2.0/:/ssd7/jxc/miniconda3/envs/mamba/bin/../libexec/gcc/:/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/bin/]
+  ignore line: [LIBRARY_PATH=/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/:/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/:/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/lib/../lib/:/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../lib/:/ssd7/jxc/miniconda3/envs/mamba/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib/:/ssd7/jxc/miniconda3/envs/mamba/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/:/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/lib/:/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../:/ssd7/jxc/miniconda3/envs/mamba/bin/../x86_64-conda-linux-gnu/sysroot/lib/:/ssd7/jxc/miniconda3/envs/mamba/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-D' '__CUDA_ARCH__=520' '-D' '__CUDA_ARCH_LIST__=520' '-E' '-D' 'CUDA_DOUBLE_MATH_FUNCTIONS' '-D' '__CUDACC__' '-D' '__NVCC__' '-v' '-I' '/usr/local/cuda-12.1/bin/../targets/x86_64-linux/include' '-D' '__CUDACC_VER_MAJOR__=12' '-D' '__CUDACC_VER_MINOR__=1' '-D' '__CUDACC_VER_BUILD__=66' '-D' '__CUDA_API_VER_MAJOR__=12' '-D' '__CUDA_API_VER_MINOR__=1' '-D' '__NVCC_DIAG_PRAGMA_SUPPORT__=1' '-include' 'cuda_runtime.h' '-m64' '-o' '/tmp/tmpxft_003e7c18_00000000-7_CMakeCUDACompilerABI.cpp1.ii' '-mtune=generic' '-march=x86-64' '-dumpdir' '/tmp/tmpxft_003e7c18_00000000-7_CMakeCUDACompilerABI.cpp1.']
+  ignore line: [Reading specs from /ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/specs]
+  ignore line: [could not find specs file conda.specs]
+  ignore line: [COLLECT_GCC=gcc]
+  ignore line: [Target: x86_64-conda-linux-gnu]
+  ignore line: [Configured with: ../configure --prefix=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1650668893531/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho --with-slibdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1650668893531/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --libdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1650668893531/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --mandir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1650668893531/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/man --build=x86_64-conda-linux-gnu --host=x86_64-conda-linux-gnu --target=x86_64-conda-linux-gnu --enable-default-pie --enable-languages=c c++ fortran objc obj-c++ --enable-__cxa_atexit --disable-libmudflap --enable-libgomp --disable-libssp --enable-libquadmath --enable-libquadmath-support --enable-libsanitizer --enable-lto --enable-threads=posix --enable-target-optspace --enable-plugin --enable-gold --disable-nls --disable-bootstrap --disable-multilib --enable-long-long --with-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1650668893531/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/x86_64-conda-linux-gnu/sysroot --with-build-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1650668893531/_build_env/x86_64-conda-linux-gnu/sysroot --with-gxx-include-dir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1650668893531/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/x86_64-conda-linux-gnu/include/c++/11.2.0 --with-pkgversion='conda-forge gcc 11.2.0-16' --with-bugurl=https://github.com/conda-forge/ctng-compilers-feedstock/issues/new/choose]
+  ignore line: [Thread model: posix]
+  ignore line: [Supported LTO compression algorithms: zlib]
+  ignore line: [gcc version 11.2.0 (conda-forge gcc 11.2.0-16) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-D' '__CUDA_ARCH_LIST__=520' '-E' '-D' '__CUDACC__' '-D' '__NVCC__' '-v' '-I' '/usr/local/cuda-12.1/bin/../targets/x86_64-linux/include' '-D' '__CUDACC_VER_MAJOR__=12' '-D' '__CUDACC_VER_MINOR__=1' '-D' '__CUDACC_VER_BUILD__=66' '-D' '__CUDA_API_VER_MAJOR__=12' '-D' '__CUDA_API_VER_MINOR__=1' '-D' '__NVCC_DIAG_PRAGMA_SUPPORT__=1' '-include' 'cuda_runtime.h' '-m64' '-o' '/tmp/tmpxft_003e7c18_00000000-5_CMakeCUDACompilerABI.cpp4.ii' '-mtune=generic' '-march=x86-64' '-dumpdir' '/tmp/']
+  ignore line: [ /ssd7/jxc/miniconda3/envs/mamba/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.2.0/cc1plus -E -quiet -v -I /usr/local/cuda-12.1/bin/../targets/x86_64-linux/include -iprefix /ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/ -isysroot /ssd7/jxc/miniconda3/envs/mamba/bin/../x86_64-conda-linux-gnu/sysroot -D_GNU_SOURCE -D __CUDA_ARCH_LIST__=520 -D __CUDACC__ -D __NVCC__ -D __CUDACC_VER_MAJOR__=12 -D __CUDACC_VER_MINOR__=1 -D __CUDACC_VER_BUILD__=66 -D __CUDA_API_VER_MAJOR__=12 -D __CUDA_API_VER_MINOR__=1 -D __NVCC_DIAG_PRAGMA_SUPPORT__=1 -include cuda_runtime.h /usr/share/cmake-3.22/Modules/CMakeCUDACompilerABI.cu -o /tmp/tmpxft_003e7c18_00000000-5_CMakeCUDACompilerABI.cpp4.ii -m64 -mtune=generic -march=x86-64 -dumpdir /tmp/ -dumpbase tmpxft_003e7c18_00000000-5_CMakeCUDACompilerABI.cpp4.cu -dumpbase-ext .cu]
+  ignore line: [ignoring duplicate directory "/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/11.2.0/include"]
+  ignore line: [ignoring nonexistent directory "/ssd7/jxc/miniconda3/envs/mamba/bin/../x86_64-conda-linux-gnu/sysroot/usr/local/include"]
+  ignore line: [ignoring duplicate directory "/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/11.2.0/include-fixed"]
+  ignore line: [ignoring duplicate directory "/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /usr/local/cuda-12.1/bin/../targets/x86_64-linux/include]
+  ignore line: [ /ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/include]
+  ignore line: [ /ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/include-fixed]
+  ignore line: [ /ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/include]
+  ignore line: [ /ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/../../x86_64-conda-linux-gnu/include/c++/11.2.0]
+  ignore line: [ /ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/../../x86_64-conda-linux-gnu/include/c++/11.2.0/x86_64-conda-linux-gnu]
+  ignore line: [ /ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/../../x86_64-conda-linux-gnu/include/c++/11.2.0/backward]
+  ignore line: [ /ssd7/jxc/miniconda3/envs/mamba/bin/../x86_64-conda-linux-gnu/sysroot/usr/include]
+  ignore line: [End of search list.]
+  ignore line: [COMPILER_PATH=/ssd7/jxc/miniconda3/envs/mamba/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.2.0/:/ssd7/jxc/miniconda3/envs/mamba/bin/../libexec/gcc/:/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/bin/]
+  ignore line: [LIBRARY_PATH=/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/:/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/:/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/lib/../lib/:/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../lib/:/ssd7/jxc/miniconda3/envs/mamba/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib/:/ssd7/jxc/miniconda3/envs/mamba/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/:/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/lib/:/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../:/ssd7/jxc/miniconda3/envs/mamba/bin/../x86_64-conda-linux-gnu/sysroot/lib/:/ssd7/jxc/miniconda3/envs/mamba/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-D' '__CUDA_ARCH_LIST__=520' '-E' '-D' '__CUDACC__' '-D' '__NVCC__' '-v' '-I' '/usr/local/cuda-12.1/bin/../targets/x86_64-linux/include' '-D' '__CUDACC_VER_MAJOR__=12' '-D' '__CUDACC_VER_MINOR__=1' '-D' '__CUDACC_VER_BUILD__=66' '-D' '__CUDA_API_VER_MAJOR__=12' '-D' '__CUDA_API_VER_MINOR__=1' '-D' '__NVCC_DIAG_PRAGMA_SUPPORT__=1' '-include' 'cuda_runtime.h' '-m64' '-o' '/tmp/tmpxft_003e7c18_00000000-5_CMakeCUDACompilerABI.cpp4.ii' '-mtune=generic' '-march=x86-64' '-dumpdir' '/tmp/tmpxft_003e7c18_00000000-5_CMakeCUDACompilerABI.cpp4.']
+  ignore line: [Reading specs from /ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/specs]
+  ignore line: [could not find specs file conda.specs]
+  ignore line: [COLLECT_GCC=gcc]
+  ignore line: [Target: x86_64-conda-linux-gnu]
+  ignore line: [Configured with: ../configure --prefix=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1650668893531/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho --with-slibdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1650668893531/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --libdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1650668893531/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --mandir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1650668893531/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/man --build=x86_64-conda-linux-gnu --host=x86_64-conda-linux-gnu --target=x86_64-conda-linux-gnu --enable-default-pie --enable-languages=c c++ fortran objc obj-c++ --enable-__cxa_atexit --disable-libmudflap --enable-libgomp --disable-libssp --enable-libquadmath --enable-libquadmath-support --enable-libsanitizer --enable-lto --enable-threads=posix --enable-target-optspace --enable-plugin --enable-gold --disable-nls --disable-bootstrap --disable-multilib --enable-long-long --with-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1650668893531/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/x86_64-conda-linux-gnu/sysroot --with-build-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1650668893531/_build_env/x86_64-conda-linux-gnu/sysroot --with-gxx-include-dir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1650668893531/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/x86_64-conda-linux-gnu/include/c++/11.2.0 --with-pkgversion='conda-forge gcc 11.2.0-16' --with-bugurl=https://github.com/conda-forge/ctng-compilers-feedstock/issues/new/choose]
+  ignore line: [Thread model: posix]
+  ignore line: [Supported LTO compression algorithms: zlib]
+  ignore line: [gcc version 11.2.0 (conda-forge gcc 11.2.0-16) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-D' '__CUDA_ARCH__=520' '-D' '__CUDA_ARCH_LIST__=520' '-c' '-D' 'CUDA_DOUBLE_MATH_FUNCTIONS' '-v' '-I' '/usr/local/cuda-12.1/bin/../targets/x86_64-linux/include' '-m64' '-o' 'CMakeFiles/cmTC_e02c5.dir/CMakeCUDACompilerABI.cu.o' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_e02c5.dir/']
+  ignore line: [ /ssd7/jxc/miniconda3/envs/mamba/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.2.0/cc1plus -quiet -v -I /usr/local/cuda-12.1/bin/../targets/x86_64-linux/include -iprefix /ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/ -isysroot /ssd7/jxc/miniconda3/envs/mamba/bin/../x86_64-conda-linux-gnu/sysroot -D_GNU_SOURCE -D __CUDA_ARCH__=520 -D __CUDA_ARCH_LIST__=520 -D CUDA_DOUBLE_MATH_FUNCTIONS /tmp/tmpxft_003e7c18_00000000-6_CMakeCUDACompilerABI.cudafe1.cpp -quiet -dumpdir CMakeFiles/cmTC_e02c5.dir/ -dumpbase CMakeCUDACompilerABI.cu.cpp -dumpbase-ext .cpp -m64 -mtune=generic -march=x86-64 -version -o /tmp/ccHukhOi.s]
+  ignore line: [GNU C++17 (conda-forge gcc 11.2.0-16) version 11.2.0 (x86_64-conda-linux-gnu)]
+  ignore line: [	compiled by GNU C version 11.2.0  GMP version 6.1.0  MPFR version 3.1.6  MPC version 1.0.3  isl version isl-0.18-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [ignoring duplicate directory "/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/11.2.0/include"]
+  ignore line: [ignoring nonexistent directory "/ssd7/jxc/miniconda3/envs/mamba/bin/../x86_64-conda-linux-gnu/sysroot/usr/local/include"]
+  ignore line: [ignoring duplicate directory "/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/11.2.0/include-fixed"]
+  ignore line: [ignoring duplicate directory "/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /usr/local/cuda-12.1/bin/../targets/x86_64-linux/include]
+  ignore line: [ /ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/include]
+  ignore line: [ /ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/include-fixed]
+  ignore line: [ /ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/include]
+  ignore line: [ /ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/../../x86_64-conda-linux-gnu/include/c++/11.2.0]
+  ignore line: [ /ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/../../x86_64-conda-linux-gnu/include/c++/11.2.0/x86_64-conda-linux-gnu]
+  ignore line: [ /ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/../../x86_64-conda-linux-gnu/include/c++/11.2.0/backward]
+  ignore line: [ /ssd7/jxc/miniconda3/envs/mamba/bin/../x86_64-conda-linux-gnu/sysroot/usr/include]
+  ignore line: [End of search list.]
+  ignore line: [GNU C++17 (conda-forge gcc 11.2.0-16) version 11.2.0 (x86_64-conda-linux-gnu)]
+  ignore line: [	compiled by GNU C version 11.2.0  GMP version 6.1.0  MPFR version 3.1.6  MPC version 1.0.3  isl version isl-0.18-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [Compiler executable checksum: b5a2d72bed81fc692f33193d6bddc0d0]
+  ignore line: [COLLECT_GCC_OPTIONS='-D' '__CUDA_ARCH__=520' '-D' '__CUDA_ARCH_LIST__=520' '-c' '-D' 'CUDA_DOUBLE_MATH_FUNCTIONS' '-v' '-I' '/usr/local/cuda-12.1/bin/../targets/x86_64-linux/include' '-m64' '-o' 'CMakeFiles/cmTC_e02c5.dir/CMakeCUDACompilerABI.cu.o' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_e02c5.dir/']
+  ignore line: [ /ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/bin/as -v -I /usr/local/cuda-12.1/bin/../targets/x86_64-linux/include --64 -o CMakeFiles/cmTC_e02c5.dir/CMakeCUDACompilerABI.cu.o /tmp/ccHukhOi.s]
+  ignore line: [GNU assembler version 2.36.1 (x86_64-conda-linux-gnu) using BFD version (GNU Binutils) 2.36.1]
+  ignore line: [COMPILER_PATH=/ssd7/jxc/miniconda3/envs/mamba/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.2.0/:/ssd7/jxc/miniconda3/envs/mamba/bin/../libexec/gcc/:/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/bin/]
+  ignore line: [LIBRARY_PATH=/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/:/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/:/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/lib/../lib/:/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../lib/:/ssd7/jxc/miniconda3/envs/mamba/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib/:/ssd7/jxc/miniconda3/envs/mamba/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/:/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/lib/:/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../:/ssd7/jxc/miniconda3/envs/mamba/bin/../x86_64-conda-linux-gnu/sysroot/lib/:/ssd7/jxc/miniconda3/envs/mamba/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-D' '__CUDA_ARCH__=520' '-D' '__CUDA_ARCH_LIST__=520' '-c' '-D' 'CUDA_DOUBLE_MATH_FUNCTIONS' '-v' '-I' '/usr/local/cuda-12.1/bin/../targets/x86_64-linux/include' '-m64' '-o' 'CMakeFiles/cmTC_e02c5.dir/CMakeCUDACompilerABI.cu.o' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_e02c5.dir/CMakeCUDACompilerABI.cu.']
+  ignore line: [Linking CUDA executable cmTC_e02c5]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e02c5.dir/link.txt --verbose=1]
+  ignore line: [/ssd7/jxc/miniconda3/envs/mamba/bin/g++ -Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,--allow-shlib-undefined -Wl,-rpath,/ssd7/jxc/miniconda3/envs/mamba/lib -Wl,-rpath-link,/ssd7/jxc/miniconda3/envs/mamba/lib -L/ssd7/jxc/miniconda3/envs/mamba/lib -v CMakeFiles/cmTC_e02c5.dir/CMakeCUDACompilerABI.cu.o -o cmTC_e02c5  -lcudadevrt -lcudart_static -lrt -lpthread -ldl  -L"/usr/local/cuda-12.1/targets/x86_64-linux/lib/stubs" -L"/usr/local/cuda-12.1/targets/x86_64-linux/lib"]
+  ignore line: [Reading specs from /ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/specs]
+  ignore line: [could not find specs file conda.specs]
+  ignore line: [COLLECT_GCC=/ssd7/jxc/miniconda3/envs/mamba/bin/g++]
+  ignore line: [COLLECT_LTO_WRAPPER=/ssd7/jxc/miniconda3/envs/mamba/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.2.0/lto-wrapper]
+  ignore line: [Target: x86_64-conda-linux-gnu]
+  ignore line: [Configured with: ../configure --prefix=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1650668893531/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho --with-slibdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1650668893531/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --libdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1650668893531/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --mandir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1650668893531/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/man --build=x86_64-conda-linux-gnu --host=x86_64-conda-linux-gnu --target=x86_64-conda-linux-gnu --enable-default-pie --enable-languages=c c++ fortran objc obj-c++ --enable-__cxa_atexit --disable-libmudflap --enable-libgomp --disable-libssp --enable-libquadmath --enable-libquadmath-support --enable-libsanitizer --enable-lto --enable-threads=posix --enable-target-optspace --enable-plugin --enable-gold --disable-nls --disable-bootstrap --disable-multilib --enable-long-long --with-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1650668893531/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/x86_64-conda-linux-gnu/sysroot --with-build-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1650668893531/_build_env/x86_64-conda-linux-gnu/sysroot --with-gxx-include-dir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1650668893531/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/x86_64-conda-linux-gnu/include/c++/11.2.0 --with-pkgversion='conda-forge gcc 11.2.0-16' --with-bugurl=https://github.com/conda-forge/ctng-compilers-feedstock/issues/new/choose]
+  ignore line: [Thread model: posix]
+  ignore line: [Supported LTO compression algorithms: zlib]
+  ignore line: [gcc version 11.2.0 (conda-forge gcc 11.2.0-16) ]
+  ignore line: [COMPILER_PATH=/ssd7/jxc/miniconda3/envs/mamba/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.2.0/:/ssd7/jxc/miniconda3/envs/mamba/bin/../libexec/gcc/:/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/bin/]
+  ignore line: [LIBRARY_PATH=/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/:/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/:/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/lib/../lib/:/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../lib/:/ssd7/jxc/miniconda3/envs/mamba/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib/:/ssd7/jxc/miniconda3/envs/mamba/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/:/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/lib/:/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../:/ssd7/jxc/miniconda3/envs/mamba/bin/../x86_64-conda-linux-gnu/sysroot/lib/:/ssd7/jxc/miniconda3/envs/mamba/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-L/ssd7/jxc/miniconda3/envs/mamba/lib' '-v' '-o' 'cmTC_e02c5' '-L/usr/local/cuda-12.1/targets/x86_64-linux/lib/stubs' '-L/usr/local/cuda-12.1/targets/x86_64-linux/lib' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_e02c5.']
+  link line: [ /ssd7/jxc/miniconda3/envs/mamba/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.2.0/collect2 -plugin /ssd7/jxc/miniconda3/envs/mamba/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.2.0/liblto_plugin.so -plugin-opt=/ssd7/jxc/miniconda3/envs/mamba/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccKe5eWb.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/ssd7/jxc/miniconda3/envs/mamba/bin/../x86_64-conda-linux-gnu/sysroot --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_e02c5 /ssd7/jxc/miniconda3/envs/mamba/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/Scrt1.o /ssd7/jxc/miniconda3/envs/mamba/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crti.o /ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/crtbeginS.o -L/ssd7/jxc/miniconda3/envs/mamba/lib -L/usr/local/cuda-12.1/targets/x86_64-linux/lib/stubs -L/usr/local/cuda-12.1/targets/x86_64-linux/lib -L/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0 -L/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc -L/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/lib/../lib -L/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../lib -L/ssd7/jxc/miniconda3/envs/mamba/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib -L/ssd7/jxc/miniconda3/envs/mamba/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib -L/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/lib -L/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../.. -L/ssd7/jxc/miniconda3/envs/mamba/bin/../x86_64-conda-linux-gnu/sysroot/lib -L/ssd7/jxc/miniconda3/envs/mamba/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib -O2 --sort-common --as-needed -z relro -z now --disable-new-dtags --gc-sections --allow-shlib-undefined -rpath /ssd7/jxc/miniconda3/envs/mamba/lib -rpath-link /ssd7/jxc/miniconda3/envs/mamba/lib CMakeFiles/cmTC_e02c5.dir/CMakeCUDACompilerABI.cu.o -lcudadevrt -lcudart_static -lrt -lpthread -ldl -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/crtendS.o /ssd7/jxc/miniconda3/envs/mamba/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crtn.o -rpath /ssd7/jxc/miniconda3/envs/mamba/lib]
+    arg [/ssd7/jxc/miniconda3/envs/mamba/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.2.0/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/ssd7/jxc/miniconda3/envs/mamba/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.2.0/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/ssd7/jxc/miniconda3/envs/mamba/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.2.0/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccKe5eWb.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [--sysroot=/ssd7/jxc/miniconda3/envs/mamba/bin/../x86_64-conda-linux-gnu/sysroot] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-pie] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_e02c5] ==> ignore
+    arg [/ssd7/jxc/miniconda3/envs/mamba/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/Scrt1.o] ==> obj [/ssd7/jxc/miniconda3/envs/mamba/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/Scrt1.o]
+    arg [/ssd7/jxc/miniconda3/envs/mamba/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crti.o] ==> obj [/ssd7/jxc/miniconda3/envs/mamba/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crti.o]
+    arg [/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/crtbeginS.o] ==> obj [/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/crtbeginS.o]
+    arg [-L/ssd7/jxc/miniconda3/envs/mamba/lib] ==> dir [/ssd7/jxc/miniconda3/envs/mamba/lib]
+    arg [-L/usr/local/cuda-12.1/targets/x86_64-linux/lib/stubs] ==> dir [/usr/local/cuda-12.1/targets/x86_64-linux/lib/stubs]
+    arg [-L/usr/local/cuda-12.1/targets/x86_64-linux/lib] ==> dir [/usr/local/cuda-12.1/targets/x86_64-linux/lib]
+    arg [-L/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0] ==> dir [/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0]
+    arg [-L/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc] ==> dir [/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc]
+    arg [-L/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/lib/../lib] ==> dir [/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/lib/../lib]
+    arg [-L/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../lib] ==> dir [/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../lib]
+    arg [-L/ssd7/jxc/miniconda3/envs/mamba/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib] ==> dir [/ssd7/jxc/miniconda3/envs/mamba/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib]
+    arg [-L/ssd7/jxc/miniconda3/envs/mamba/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib] ==> dir [/ssd7/jxc/miniconda3/envs/mamba/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib]
+    arg [-L/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/lib] ==> dir [/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/lib]
+    arg [-L/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../..] ==> dir [/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../..]
+    arg [-L/ssd7/jxc/miniconda3/envs/mamba/bin/../x86_64-conda-linux-gnu/sysroot/lib] ==> dir [/ssd7/jxc/miniconda3/envs/mamba/bin/../x86_64-conda-linux-gnu/sysroot/lib]
+    arg [-L/ssd7/jxc/miniconda3/envs/mamba/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib] ==> dir [/ssd7/jxc/miniconda3/envs/mamba/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib]
+    arg [-O2] ==> ignore
+    arg [--sort-common] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-zrelro] ==> ignore
+    arg [-znow] ==> ignore
+    arg [--disable-new-dtags] ==> ignore
+    arg [--gc-sections] ==> ignore
+    arg [--allow-shlib-undefined] ==> ignore
+    arg [-rpath] ==> ignore
+    arg [/ssd7/jxc/miniconda3/envs/mamba/lib] ==> ignore
+    arg [-rpath-link] ==> ignore
+    arg [/ssd7/jxc/miniconda3/envs/mamba/lib] ==> ignore
+    arg [CMakeFiles/cmTC_e02c5.dir/CMakeCUDACompilerABI.cu.o] ==> ignore
+    arg [-lcudadevrt] ==> lib [cudadevrt]
+    arg [-lcudart_static] ==> lib [cudart_static]
+    arg [-lrt] ==> lib [rt]
+    arg [-lpthread] ==> lib [pthread]
+    arg [-ldl] ==> lib [dl]
+    arg [-lstdc++] ==> lib [stdc++]
+    arg [-lm] ==> lib [m]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lc] ==> lib [c]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/crtendS.o] ==> obj [/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/crtendS.o]
+    arg [/ssd7/jxc/miniconda3/envs/mamba/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crtn.o] ==> obj [/ssd7/jxc/miniconda3/envs/mamba/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crtn.o]
+    arg [-rpath] ==> ignore
+    arg [/ssd7/jxc/miniconda3/envs/mamba/lib] ==> ignore
+  collapse obj [/ssd7/jxc/miniconda3/envs/mamba/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/Scrt1.o] ==> [/ssd7/jxc/miniconda3/envs/mamba/x86_64-conda-linux-gnu/sysroot/usr/lib/Scrt1.o]
+  collapse obj [/ssd7/jxc/miniconda3/envs/mamba/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crti.o] ==> [/ssd7/jxc/miniconda3/envs/mamba/x86_64-conda-linux-gnu/sysroot/usr/lib/crti.o]
+  collapse obj [/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/crtbeginS.o] ==> [/ssd7/jxc/miniconda3/envs/mamba/lib/gcc/x86_64-conda-linux-gnu/11.2.0/crtbeginS.o]
+  collapse obj [/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/crtendS.o] ==> [/ssd7/jxc/miniconda3/envs/mamba/lib/gcc/x86_64-conda-linux-gnu/11.2.0/crtendS.o]
+  collapse obj [/ssd7/jxc/miniconda3/envs/mamba/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crtn.o] ==> [/ssd7/jxc/miniconda3/envs/mamba/x86_64-conda-linux-gnu/sysroot/usr/lib/crtn.o]
+  collapse library dir [/ssd7/jxc/miniconda3/envs/mamba/lib] ==> [/ssd7/jxc/miniconda3/envs/mamba/lib]
+  collapse library dir [/usr/local/cuda-12.1/targets/x86_64-linux/lib/stubs] ==> [/usr/local/cuda-12.1/targets/x86_64-linux/lib/stubs]
+  collapse library dir [/usr/local/cuda-12.1/targets/x86_64-linux/lib] ==> [/usr/local/cuda-12.1/targets/x86_64-linux/lib]
+  collapse library dir [/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0] ==> [/ssd7/jxc/miniconda3/envs/mamba/lib/gcc/x86_64-conda-linux-gnu/11.2.0]
+  collapse library dir [/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc] ==> [/ssd7/jxc/miniconda3/envs/mamba/lib/gcc]
+  collapse library dir [/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/lib/../lib] ==> [/ssd7/jxc/miniconda3/envs/mamba/x86_64-conda-linux-gnu/lib]
+  collapse library dir [/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../lib] ==> [/ssd7/jxc/miniconda3/envs/mamba/lib]
+  collapse library dir [/ssd7/jxc/miniconda3/envs/mamba/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib] ==> [/ssd7/jxc/miniconda3/envs/mamba/x86_64-conda-linux-gnu/sysroot/lib]
+  collapse library dir [/ssd7/jxc/miniconda3/envs/mamba/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib] ==> [/ssd7/jxc/miniconda3/envs/mamba/x86_64-conda-linux-gnu/sysroot/usr/lib]
+  collapse library dir [/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/lib] ==> [/ssd7/jxc/miniconda3/envs/mamba/x86_64-conda-linux-gnu/lib]
+  collapse library dir [/ssd7/jxc/miniconda3/envs/mamba/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../..] ==> [/ssd7/jxc/miniconda3/envs/mamba/lib]
+  collapse library dir [/ssd7/jxc/miniconda3/envs/mamba/bin/../x86_64-conda-linux-gnu/sysroot/lib] ==> [/ssd7/jxc/miniconda3/envs/mamba/x86_64-conda-linux-gnu/sysroot/lib]
+  collapse library dir [/ssd7/jxc/miniconda3/envs/mamba/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib] ==> [/ssd7/jxc/miniconda3/envs/mamba/x86_64-conda-linux-gnu/sysroot/usr/lib]
+  implicit libs: [cudadevrt;cudart_static;rt;pthread;dl;stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+  implicit objs: [/ssd7/jxc/miniconda3/envs/mamba/x86_64-conda-linux-gnu/sysroot/usr/lib/Scrt1.o;/ssd7/jxc/miniconda3/envs/mamba/x86_64-conda-linux-gnu/sysroot/usr/lib/crti.o;/ssd7/jxc/miniconda3/envs/mamba/lib/gcc/x86_64-conda-linux-gnu/11.2.0/crtbeginS.o;/ssd7/jxc/miniconda3/envs/mamba/lib/gcc/x86_64-conda-linux-gnu/11.2.0/crtendS.o;/ssd7/jxc/miniconda3/envs/mamba/x86_64-conda-linux-gnu/sysroot/usr/lib/crtn.o]
+  implicit dirs: [/ssd7/jxc/miniconda3/envs/mamba/lib;/usr/local/cuda-12.1/targets/x86_64-linux/lib/stubs;/usr/local/cuda-12.1/targets/x86_64-linux/lib;/ssd7/jxc/miniconda3/envs/mamba/lib/gcc/x86_64-conda-linux-gnu/11.2.0;/ssd7/jxc/miniconda3/envs/mamba/lib/gcc;/ssd7/jxc/miniconda3/envs/mamba/x86_64-conda-linux-gnu/lib;/ssd7/jxc/miniconda3/envs/mamba/x86_64-conda-linux-gnu/sysroot/lib;/ssd7/jxc/miniconda3/envs/mamba/x86_64-conda-linux-gnu/sysroot/usr/lib]
+  implicit fwks: []
+
+

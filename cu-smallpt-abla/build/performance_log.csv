@@ -1,0 +1,2 @@
+block_x,pixels_per_thread,samples,kernel_time_ms,total_time_ms,efficiency
+8,1,75,13010.504,13010.665,1.000
